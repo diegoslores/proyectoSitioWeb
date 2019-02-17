@@ -1,10 +1,14 @@
 /*CSS General a todo el sitio*/
+/*1920px portatil*/
+* {
+    box-sizing: border-box;
+}
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.4em;
-    margin: auto;
     width: 90%;
+    margin: auto;
     background-color: #f0f8ff;
 }
 
@@ -41,22 +45,18 @@ h3 {
 
 #navegador {
     position: absolute;
-    bottom: -.2em;
+    bottom: -.3em;
     margin-left: 0.5em;
-    z-index: 9;
+    z-index: 5;
 }
 
 #navegador a {
     display: inline-block;
     text-align: center;
     padding: 0.5em;
-    width: 120px;
+    width: 8em;
     border: solid 2px #3030de;
     background-color: #e5d1d1;
-}
-
-#navegador a:active {
-    background-color: #87ceeb;
 }
 
 #navegador .BIni,
@@ -70,7 +70,8 @@ h3 {
     border-bottom: none;
 }
 
-#navegador a:active {
+#navegador a:hover {
+    background-color: #87ceeb;
     color: #000000;
     font-weight: bold;
 }
@@ -97,7 +98,7 @@ address a {
 footer {
     background: url("../img/pie.jpg") 50% 50%;
     background-color: #00008b;
-    margin-top: -.6em;
+    margin-top: -.5em;
     padding: 1em;
 }
 
@@ -111,17 +112,20 @@ footer p {
 /*CSS específico de secciones*/
 
 #cuerpo section:first-child {
-    margin-top: -1.5px;
-    z-index: 5;
+    margin-top: 0;
+    z-index: 4;
     border-top: solid 2px #3030de;
 }
 
 section {
-    position: relative;
+    overflow:auto;
     margin: .5em 1em;
-    min-height: 200px;
+    min-height: 8em;
     background-color: #add8e6;
     border: solid 2px #00008b;
+}
+section img{
+    width: 100%;
 }
 
 section h2 {
@@ -134,32 +138,16 @@ section h2 {
     margin-bottom: .5em;
 }
 
-.textLeft {
-    vertical-align: middle;
-    margin-top: 2%;
-    margin-left: 2%;
-    margin-right: 200px;
-    margin-bottom: 2%;
+.textSeccion {    
+    width: 77%;
+    float: left;
+    margin: 2%;
 }
 
-.imgRight {
-    position: absolute;
-    top: 12%;
-    right: 2%;
-}
-
-.textRight {
-    vertical-align: middle;
-    margin-top: 2%;
-    margin-right: 2%;
-    margin-left: 200px;
-    margin-bottom: 2%;
-}
-
-.imgLeft {
-    position: absolute;
-    top: 12%;
-    left: 2%;
+.imgSeccion {    
+    width: 15%;
+    float: left;
+    margin: 2%;
 }
 
 h2 a {
@@ -175,7 +163,6 @@ ul,
 
 .textServ,
 .textTrab,
-.textPre,
 .textInfo {
     vertical-align: middle;
     margin-top: 2%;
@@ -186,24 +173,14 @@ ul,
     clear: left;
 }
 
-.textPre .text{
-    width: 85%
-}
-.imgPre{
-    position: absolute;
-    top: 10%;
-    right: 2%;
-    height: 80%;
-    width: 220px;
-}
-
 .imgServicios {
     float: left;
     clear: right;
     width: 60%;
     margin-left: 20%;
 }
-.imgTrabajo1{
+
+.imgTrabajo1 {
     float: left;
     width: 20%;
     margin-left: 4%;
