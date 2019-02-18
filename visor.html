@@ -1,72 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+
+<head>
     <title>HST</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" type="text/css" href="css/css.css" />
 
     <!-- lineas para implementar javascript en el visor -->
-    <script type="text/javascript" src="scripts/visor.js"></script>
-    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css"
-    />
-  </head>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+</head>
 
-  <body>
+<body>
     <header id="cabecera">
-      <a href="index.html"
-        ><img
-          src="img/logo.jpg"
-          alt="logotio HST"
-          height="100"
-          width="150"
-          class="imagen"
-      /></a>
-      <nav id="navegador">
-        <a href="index.html">Inicio</a>
-        <a href="informacion.html">Información</a>
-        <a class="BVis" href="visor.html">Visor</a>
-        <a href="contacto.html">Contacto</a>
-      </nav>
-      <address>
-        <a href="https://www.linkedin.com"
-          ><img alt="linkedin" src="img/linkedin.jpg"
-        /></a>
-        <a href="https://www.blogger.com/"
-          ><img alt="blogger" src="img/blogger.jpg"
-        /></a>
-        <a href="https://es-es.facebook.com"
-          ><img alt="facebook" src="img/face.png"
-        /></a>
-      </address>
+        <a href="index.html"><img src="img/logo.jpg" alt="logotio HST" height="100" width="150" class="imagen" /></a>
+        <nav id="navegador">
+            <a href="index.html">Inicio</a>
+            <a href="informacion.html">Información</a>
+            <a class="BVis" href="visor.html">Visor</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+        <address>
+            <a href="https://www.linkedin.com" target="_blank"><img alt="linkedin" src="img/linkedin.jpg" /></a>
+            <a href="https://www.blogger.com/" target="_blank"><img alt="blogger" src="img/blogger.jpg" /></a>
+            <a href="https://es-es.facebook.com" target="_blank"><img alt="facebook" src="img/face.png" /></a>
+        </address>
     </header>
     <main id="cuerpo">
-      <section id="seccionVisor">
-        <nav id="botonesVisor">
-          <button onclick="mapa()">Mapa</button>
-          <button onclick="relieve()">Topográfico</button>
-          <button onclick="satelite()">Ortofoto</button>
-          <button onclick="americano()">Vuelo Americano</button>
-          <button onclick="catastro()">Catastro</button>
-        </nav>
-        <div class="imgVisor">
-          <div id="map"></div>
-        </div>
-      </section>
+        <section id="seccionVisor">
+            <ul id="botonesVisor">
+                <li onclick="mapa()">Mapa</li>
+                <li onclick="relieve()">Topográfico</li>
+                <li onclick="satelite()">Ortofoto</li>
+                <li onclick="americano()">Vuelo Americano</li>
+                <li onclick="catastro()">Catastro</li>
+            </ul>
+            <div class="imgVisor">
+                <div id="map"></div>
+            </div>
+        </section>
     </main>
     <footer>
-      <p>
-        @diegoSanchez
-        <span style="float: right">
-          <a href="./temp/mapaNavegacion.html">Mapas Navegación</a>|<a
-            href="./temp/prototipos.html"
-            >Prototipos</a
-          >|
-          <a href="contacto.html"> Contacto </a>
-        </span>
-      </p>
+        <p>
+            @diegoSanchez
+            <span>
+                <a href="./temp/mapaNavegacion.html">Mapas Navegación</a>|<a href="./temp/prototipos.html">Prototipos</a>|
+                <a href="contacto.html"> Contacto </a>
+            </span>
+        </p>
     </footer>
-  </body>
+</body>
+<script type="text/javascript" src="scripts/visor.js"></script>
+<script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+
 </html>

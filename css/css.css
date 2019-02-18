@@ -12,12 +12,6 @@ body {
     background-color: #f0f8ff;
 }
 
-img{
-    border-top: 1px solid #808080;
-    border-left: 1px solid #808080;
-    box-shadow: 5px 5px 5px rgba(139, 139, 139, 0.76);
-}
-
 #cuerpo {
     background: url("../img/cabecera.jpg") 50% 50%;
 }
@@ -48,7 +42,7 @@ h3 {
 
 #cabecera .imagen {
     margin-top: 0.5em;
-    margin-bottom: 2em;    
+    margin-bottom: 2em;
 }
 
 #navegador {
@@ -124,6 +118,10 @@ footer p {
     background-color: #add8e6;
 }
 
+footer span {
+    float: right;
+}
+
 /*
     *CSS específico de secciones
 */
@@ -140,10 +138,6 @@ section {
     min-height: 8em;
     background-color: #add8e6;
     border: solid 2px #00008b;
-}
-
-section img {
-    width: 100%;
 }
 
 section h2 {
@@ -166,6 +160,10 @@ section h2 {
     width: 15%;
     float: left;
     margin: 2%;
+    /*Añadido CSS3 para borde y sombra en las imagenes*/
+    border-top: 1px solid #808080;
+    border-left: 1px solid #808080;
+    box-shadow: 5px 5px 5px rgba(139, 139, 139, 0.76);
 }
 
 h2 a {
@@ -191,18 +189,22 @@ ul,
     clear: left;
 }
 
-.imgServicios {
+.imgServicios,
+.imgTrabajo1 {
     float: left;
-    clear: right;
     width: 60%;
     margin-left: 20%;
+    margin-bottom: 1em;
+    /*Añadido CSS3 para borde y sombra en las imagenes*/
+    border-top: 1px solid #808080;
+    border-left: 1px solid #808080;
+    box-shadow: 5px 5px 5px rgba(139, 139, 139, 0.76);
 }
 
 .imgTrabajo1 {
     float: left;
     width: 20%;
     margin-left: 4%;
-    margin-top: -1em;
 }
 
 /*
@@ -257,24 +259,25 @@ ul,
     float: left;
     width: 20%;
     padding: 2%;
+    list-style: none;
 }
 
-#botonesVisor button {
+#botonesVisor li {
     display: block;
     padding: 0.5em;
     margin: .5em auto;
     width: 100%;
     border-radius: 12px;
+    border: 1.5px solid #3939e0;
     background: linear-gradient(#fff, #ddd);
-    transition: width 2s;
+    text-align: center;
 }
 
-#botonesVisor button:hover,
-#botonesVisor button:active{
+#botonesVisor li:hover,
+#botonesVisor li:active {
     background: #87ceeb;
     color: #800e25;
     font-weight: bold;
-    width: 135%;
 }
 
 #map {

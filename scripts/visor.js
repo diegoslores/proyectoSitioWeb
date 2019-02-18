@@ -9,9 +9,6 @@ function mapa() {
     maxZoom: 18
   }).addTo(map);
   L.control.scale().addTo(map);
-  L.marker([42.88, -8.54], {
-    draggable: true
-  }).addTo(map);
 }
 
 function relieve() {
@@ -29,15 +26,11 @@ function relieve() {
       minZoom: 8,
       maxZoom: 18,
       attribution:
-        'Â© <a href="http://www.ign.es/ign/main/index.do" target="_blank">Instituto Geográfico Nacional de España</a>'
+        '© <a href="http://www.ign.es/ign/main/index.do" target="_blank">Instituto Geográfico Nacional de España</a>'
     })
     .addTo(map);
 
   L.control.scale().addTo(map);
-
-  L.marker([42.88, -8.54], {
-    draggable: true
-  }).addTo(map);
 }
 
 function satelite() {
@@ -60,10 +53,6 @@ function satelite() {
     .addTo(map);
 
   L.control.scale().addTo(map);
-
-  L.marker([42.88, -8.54], {
-    draggable: true
-  }).addTo(map);
 }
 
 function americano() {
@@ -85,10 +74,6 @@ function americano() {
     .addTo(map);
 
   L.control.scale().addTo(map);
-
-  L.marker([42.88, -8.54], {
-    draggable: true
-  }).addTo(map);
 }
 
 function catastro() {
@@ -108,7 +93,4 @@ function catastro() {
     .addTo(map);
 
   L.control.scale().addTo(map);
-  L.marker([42.88, -8.54], {
-    draggable: true
-  }).addTo(map);
 }
