@@ -29,7 +29,7 @@ function relieve() {
       minZoom: 8,
       maxZoom: 18,
       attribution:
-        'Â© <a href="http://www.ign.es/ign/main/index.do" target="_blank">Instituto GeogrÃ¡fico Nacional de EspaÃ±a</a>'
+        'Â© <a href="http://www.ign.es/ign/main/index.do" target="_blank">Instituto Geográfico Nacional de España</a>'
     })
     .addTo(map);
 
@@ -55,7 +55,7 @@ function satelite() {
       maxZoom: 18,
       continuousWorld: true,
       attribution:
-        'PNOA cedido por &copy; <a href="http://www.ign.es/ign/main/index.do" target="_blank">Instituto GeogrÃ¡fico Nacional de EspaÃ±a</a>'
+        'PNOA cedido por &copy; <a href="http://www.ign.es/ign/main/index.do" target="_blank">Instituto Geográfico Nacional de España</a>'
     })
     .addTo(map);
 
@@ -80,7 +80,7 @@ function americano() {
       minZoom: 8,
       maxZoom: 18,
       attribution:
-        'Voo americano 1956-1957 cedido por &copy; <a href="http://www.ign.es/ign/main/index.do" target="_blank">Instituto GeogrÃ¡fico Nacional de EspaÃ±a</a>'
+        'Voo americano 1956-1957 cedido por &copy; <a href="http://www.ign.es/ign/main/index.do" target="_blank">Instituto Geográfico Nacional de España</a>'
     })
     .addTo(map);
 

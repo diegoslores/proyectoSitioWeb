@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/css.css" />
 
     <!-- lineas para implementar javascript en el visor -->
+    <script type="text/javascript" src="scripts/visor.js"></script>
     <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
     <link
       rel="stylesheet"
@@ -45,8 +46,8 @@
       <section id="seccionVisor">
         <nav id="botonesVisor">
           <button onclick="mapa()">Mapa</button>
-          <button onclick="relieve()">Relieve</button>
-          <button onclick="satelite()">Satélite</button>
+          <button onclick="relieve()">Topográfico</button>
+          <button onclick="satelite()">Ortofoto</button>
           <button onclick="americano()">Vuelo Americano</button>
           <button onclick="catastro()">Catastro</button>
         </nav>
@@ -68,5 +69,4 @@
       </p>
     </footer>
   </body>
-  <script type="text/javascript" src="scripts/visor.js"></script>
 </html>
