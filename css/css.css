@@ -45,6 +45,8 @@ h3 {
 #cabecera .imagen {
     margin-top: 0.5em;
     margin-bottom: 2em;
+    /*Añadido CSS3 sombra en las imagenes*/
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
 }
 
 #navegador {
@@ -60,10 +62,10 @@ h3 {
     padding: 0.5em;
     width: 8em;
     border: 2px solid #3939e0;
-    /*CSS3 border radius y gradiente para dar color al nav*/
+    /*CSS3 border radius y gradiente para dar color a los botones de nav*/
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
-    background: linear-gradient(#fff, #ddd);
+    background: linear-gradient(#84d0e8, #f0f0f0);
 }
 
 #navegador .BIni,
@@ -80,7 +82,8 @@ h3 {
 }
 
 #navegador a:hover {
-    background: #add8e6;
+    /*CSS3 gradiente para dar color a los botones de nav al hacer hover*/
+    background: linear-gradient(to top, #84d0f9 0%, #3863f7 100%);    
     color: #800e25;
     font-weight: bold;
 }
@@ -101,12 +104,14 @@ address a {
     height: 40px;
     border-radius: 50%;
     margin-bottom: 0.5em;
-    /*De aquí ata o comentario de footer codigo css3 para que as imaxes parezan botons dinamicos*/
-    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
-    transition: .5s;
+    /*CSS3 para dar sombra a los botones de RRSS*/
+    box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+    transition: box-shadow .5s;  
 }
+
 #cabecera address img:hover {
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    /*CSS3 para reducir la sombra con hover*/
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
 }
 
 /*
@@ -129,6 +134,11 @@ footer p {
 
 footer span {
     float: right;
+}
+
+footer span a:hover {
+    font-weight: bold;
+    color: #800e25;
 }
 
 /*
@@ -235,7 +245,7 @@ ul,
     margin-top: .5em;
     /*Añadido CSS3 para borde y sombra en las imagenes y siguiente hover para dar efecto de transition.*/
     box-shadow: 0 10px 15px rgba(0,0,0,0.3);
-    transition: .5s;
+    transition: box-shadow .5s;       
 }
 
 .enlaces img:hover {
@@ -286,14 +296,15 @@ ul,
     border: 1.5px solid #3939e0;
     text-align: center;    
     cursor: pointer;
-    /*CSS3 añadido para dar boder radius y color gradiente y transicion en hover*/
+    /*CSS3 añadido para dar boder radius y color gradiente en hover*/
     border-radius: 12px;    
-    background: linear-gradient(#fff, #ddd);
-    transition: 4s;
+    background-color: #f0f0f0;
+    transition: background 1s;    
 }
 
 #botonesVisor li:hover {
-    background: linear-gradient(red, #ddd);
+    
+    background: linear-gradient(to left, #84d0f9 0%, #577bf4 100%);
     color: #800e25;
     font-weight: bold;
 }
