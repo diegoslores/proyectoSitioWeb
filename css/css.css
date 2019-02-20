@@ -362,12 +362,8 @@ span label{
     margin-top: .2em;
 }
 
-/*#formulario label {
-    margin: 1em;
-}
-
 #formulario input {
-    width: 100%;
+    width: 80%;
     padding: 0.4em;
 }
 
@@ -377,18 +373,15 @@ span label{
     float: right;
 }
 
-#formulario .area {
-    width: 100px;
-}
+
 
 #formulario .envio {
     width: 20%;
     cursor: pointer;
     /*CSS3 añadido para dar boder radius y color gradiente en hover*/
     border-radius: 12px;
-    background-color: #f0f0f0;
-    
-}*/
+    background-color: #f0f0f0;    
+}
 
 /*
     *Mapas de Navegacion
