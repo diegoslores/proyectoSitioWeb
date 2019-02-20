@@ -46,7 +46,7 @@ h3 {
     margin-top: 0.5em;
     margin-bottom: 2em;
     /*Añadido CSS3 sombra en las imagenes*/
-    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 #navegador {
@@ -83,7 +83,7 @@ h3 {
 
 #navegador a:hover {
     /*CSS3 gradiente para dar color a los botones de nav al hacer hover*/
-    background: linear-gradient(to top, #84d0f9 0%, #3863f7 100%);    
+    background: linear-gradient(to top, #84d0f9 0%, #3863f7 100%);
     color: #800e25;
     font-weight: bold;
 }
@@ -105,13 +105,13 @@ address a {
     border-radius: 50%;
     margin-bottom: 0.5em;
     /*CSS3 para dar sombra a los botones de RRSS*/
-    box-shadow: 0 10px 15px rgba(0,0,0,0.5);
-    transition: box-shadow .5s;  
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    transition: box-shadow .5s;
 }
 
 #cabecera address img:hover {
     /*CSS3 para reducir la sombra con hover*/
-    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 /*
@@ -244,12 +244,12 @@ ul,
     width: 80%;
     margin-top: .5em;
     /*Añadido CSS3 para borde y sombra en las imagenes y siguiente hover para dar efecto de transition.*/
-    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
-    transition: box-shadow .5s;       
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    transition: box-shadow .5s;
 }
 
 .enlaces img:hover {
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .legisla {
@@ -294,16 +294,15 @@ ul,
     margin: .5em auto;
     width: 100%;
     border: 1.5px solid #3939e0;
-    text-align: center;    
+    text-align: center;
     cursor: pointer;
     /*CSS3 añadido para dar boder radius y color gradiente en hover*/
-    border-radius: 12px;    
+    border-radius: 12px;
     background-color: #f0f0f0;
-    transition: background 1s;    
 }
 
 #botonesVisor li:hover {
-    
+
     background: linear-gradient(to left, #84d0f9 0%, #577bf4 100%);
     color: #800e25;
     font-weight: bold;
@@ -327,29 +326,44 @@ ul,
 
 .contacto {
     margin: 1.5em;
+}
+
+.contacto address,
+.contacto p, h2 {
+    font-style: normal;
     text-align: center;
 }
 
-.contacto address {
-    font-style: normal;
+.lpd {
+    font-size: 0.7em;
+    text-align: center;
 }
 
-#formulario {
-    overflow: auto;
+#formulario {    
     padding: 1em;
     width: 50%;
     margin: auto;
 }
 
-#formulario span {
-    margin: 0.5em 0;
-    text-align: justify;
+.col1,
+.col2 {
+    overflow: auto;
+    width: 50%;
     float: left;
-    clear: left;
 }
 
-#formulario .area {
-    float: right;
+#formulario span{
+    overflow: auto;
+}
+
+span label{
+    float: left;
+    width: 98%;
+    margin-top: .2em;
+}
+
+/*#formulario label {
+    margin: 1em;
 }
 
 #formulario input {
@@ -357,14 +371,24 @@ ul,
     padding: 0.4em;
 }
 
-#formulario .envio {
-    width: 100px;
-    padding: 0.4em;
+#formulario .radio input {
+    width: 10%;
+    margin: 0 1em;
+    float: right;
 }
 
-.lpd {
-    font-size: 0.7em;
+#formulario .area {
+    width: 100px;
 }
+
+#formulario .envio {
+    width: 20%;
+    cursor: pointer;
+    /*CSS3 añadido para dar boder radius y color gradiente en hover*/
+    border-radius: 12px;
+    background-color: #f0f0f0;
+    
+}*/
 
 /*
     *Mapas de Navegacion
