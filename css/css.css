@@ -367,13 +367,11 @@ span label{
     padding: 0.4em;
 }
 
-#formulario .radio input {
+#formulario .check input {
     width: 10%;
     margin: 0 1em;
     float: right;
 }
-
-
 
 #formulario .envio {
     width: 20%;
