@@ -373,6 +373,19 @@ span label{
     float: right;
 }
 
+#formulario .check{
+    font-size: 0.9em;
+}
+
+#formulario .check label{
+    font-size: 1.1em;
+}
+
+#formulario .area label {
+    margin-top: 1em;
+    width: 100%;
+}
+
 #formulario .envio {
     width: 20%;
     cursor: pointer;
