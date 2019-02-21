@@ -274,6 +274,10 @@ ul,
 /*
     *CSS específico de Visor
 */
+#seccionVisor h2 {
+    text-align: center;
+    margin: 1em;
+}
 
 #seccionVisor {
     margin: 0.5em 1em;
@@ -329,7 +333,8 @@ ul,
 }
 
 .contacto address,
-.contacto p, h2 {
+.contacto p,
+.contacto h2 {
     font-style: normal;
     text-align: center;
 }
@@ -339,7 +344,7 @@ ul,
     text-align: center;
 }
 
-#formulario {    
+#formulario {
     padding: 1em;
     width: 50%;
     margin: auto;
@@ -352,11 +357,11 @@ ul,
     float: left;
 }
 
-#formulario span{
+#formulario span {
     overflow: auto;
 }
 
-span label{
+span label {
     float: left;
     width: 98%;
     margin-top: .2em;
@@ -373,11 +378,11 @@ span label{
     float: right;
 }
 
-#formulario .check{
+#formulario .check {
     font-size: 0.9em;
 }
 
-#formulario .check label{
+#formulario .check label {
     font-size: 1.1em;
 }
 
@@ -391,7 +396,7 @@ span label{
     cursor: pointer;
     /*CSS3 añadido para dar boder radius y color gradiente en hover*/
     border-radius: 12px;
-    background-color: #f0f0f0;    
+    background-color: #f0f0f0;
 }
 
 /*
