@@ -227,6 +227,50 @@ ul,
 }
 
 /*
+    *CSS3 de Tooltip añadido para esta fase del proyecto
+*/
+.tooltip{
+    position: relative;
+}
+.tooltiptext {
+    visibility: hidden;
+    width: 15%;
+    background-color: #800e25;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px 0;
+}
+.tooltiptext1 {
+    position: absolute;
+    top: 2em;
+    left: 5%;
+    z-index: 1;
+}
+.tooltiptext2 {
+    position: absolute;
+    top: 2em;
+    left: 30%;
+    z-index: 1;
+}
+.tooltiptext4 {
+    position: absolute;
+    top: 2em;
+    left: 54%;
+    z-index: 1;
+}
+.tooltiptext3 {
+    position: absolute;
+    top: 2em;
+    left: 78%;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/*
     *CSS de información
 */
 
