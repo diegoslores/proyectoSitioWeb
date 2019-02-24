@@ -1,13 +1,20 @@
 /*CSS General a todo el sitio*/
-/*1920px portatil*/
 
-/*border-box aplicado a todo o sitio web para ter un mellor control no tamaños das "caixas", creadas principalmente con float.*/
+/*border-box con webkit y moz aplicado a todo o sitio web para ter un mellor control no tamaños das "caixas", creadas principalmente con float.*/
+/*Web font aplicada a todo el sitio con "*" */
+@font-face {
+    font-family: 'Roboto Condensed', sans-serif;
+    src: url(../fonts/robotoCondensed.woff2);
+}
+
 * {
     box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.4em;
     width: 90%;
     margin: auto;
@@ -229,9 +236,10 @@ ul,
 /*
     *CSS3 de Tooltip añadido para esta fase del proyecto
 */
-.tooltip{
+.tooltip {
     position: relative;
 }
+
 .tooltiptext {
     visibility: hidden;
     width: 15%;
@@ -241,28 +249,32 @@ ul,
     border-radius: 10px;
     padding: 5px 0;
 }
+
 .tooltiptext1 {
     position: absolute;
     top: 2em;
-    left: 5%;
+    left: 6.5%;
     z-index: 1;
 }
+
 .tooltiptext2 {
     position: absolute;
     top: 2em;
-    left: 30%;
+    left: 30.5%;
     z-index: 1;
 }
+
 .tooltiptext4 {
     position: absolute;
     top: 2em;
-    left: 54%;
+    left: 54.5%;
     z-index: 1;
 }
+
 .tooltiptext3 {
     position: absolute;
     top: 2em;
-    left: 78%;
+    left: 78.5%;
     z-index: 1;
 }
 
@@ -273,6 +285,9 @@ ul,
 /*
     *CSS de información
 */
+#seccionInfo h2 {
+    margin-top: .5em;
+}
 
 .textInfoDown {
     overflow: auto;
@@ -327,13 +342,13 @@ ul,
     margin: 0.5em 1em;
     min-height: 8em;
     background-color: #add8e6;
-    border: solid 2px #00008b;
 }
 
 #botonesVisor {
     float: left;
     width: 20%;
     padding: 2%;
+    clear: both;
 }
 
 #botonesVisor li {
@@ -362,7 +377,8 @@ ul,
     margin: 2%;
     padding: 20% 0;
     background: url("../img/logo.jpg") no-repeat center;
-    /*CSS3 añadido para dar aspecto dinamico a la ventana del visor.*/
+
+    /*CSS3 añadido para dar sombra y bordea la ventana del visor.*/
     border-top: 1px solid #808080;
     border-left: 1px solid #808080;
     box-shadow: 5px 5px 5px #888;
@@ -375,7 +391,9 @@ ul,
 .contacto {
     margin: 1.5em;
 }
-
+.contacto h2{
+    margin-top: 1.5em
+}
 .contacto address,
 .contacto p,
 .contacto h2 {
@@ -441,6 +459,22 @@ span label {
     /*CSS3 añadido para dar boder radius y color gradiente en hover*/
     border-radius: 12px;
     background-color: #f0f0f0;
+}
+
+/*
+    *Breadcrumbs
+*/
+section .breadcrumbs {
+    list-style: none;
+    padding-left: 1em;
+    font-size: 0.8em;
+    margin: 0.5em;
+}
+
+.breadcrumbs a {
+    color: #800e25;
+    padding: .2em;
+    float: left;
 }
 
 /*

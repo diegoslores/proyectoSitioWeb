@@ -28,17 +28,24 @@
         </address>
     </header>
     <main id="cuerpo">
-        <section id="seccionVisor">
-            <ul id="botonesVisor">
-                <h2>Visor</h2>
-                <li onclick="mapa()">Mapa</li>
-                <li onclick="relieve()">Topográfico</li>
-                <li onclick="satelite()">Ortofoto</li>
-                <li onclick="americano()">Vuelo Americano</li>
-                <li onclick="catastro()">Catastro</li>
+        <section>
+            <ul class="breadcrumbs">
+                <li><a href="index.html">Inicio ></a></li>
+                <li><a href="informacion.html">Información ></a></li>
+                <li><a href="#">Visor</a></li>
             </ul>
-            <div class="imgVisor">
-                <div id="map"></div>
+            <div id="seccionVisor">
+                <ul id="botonesVisor">
+                    <h2>Visor</h2>
+                    <li onclick="mapa()">Mapa</li>
+                    <li onclick="relieve()">Topográfico</li>
+                    <li onclick="satelite()">Ortofoto</li>
+                    <li onclick="americano()">Vuelo Americano</li>
+                    <li onclick="catastro()">Catastro</li>
+                </ul>
+                <div class="imgVisor">
+                    <div id="map"></div>
+                </div>
             </div>
         </section>
     </main>
