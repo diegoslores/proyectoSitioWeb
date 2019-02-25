@@ -8,7 +8,7 @@
 }
 
 * {
-    box-sizing: border-box;
+
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     font-family: 'Roboto Condensed', sans-serif;
@@ -33,7 +33,6 @@ a {
 
 h1,
 h2,
-h2 a,
 h3 {
     color: #800e25;
 }
@@ -86,7 +85,7 @@ h3 {
     border-bottom: none;
     font-weight: bold;
     /*CSS3 Transparencia*/
-    background: rgb(173, 216, 230,0.95);
+    background: rgb(173, 216, 230, 0.95);
 }
 
 #navegador a:hover {
@@ -138,7 +137,7 @@ footer p {
     margin: 0;
     border: solid 2px #00008b;
     /*CSS3 Transparencia*/
-    background-color: rgb(173, 216, 230,0.95);
+    background-color: rgb(173, 216, 230, 0.95);
 }
 
 footer span {
@@ -166,7 +165,7 @@ section {
     min-height: 8em;
     border: solid 2px #00008b;
     /*CSS3 Transparencia*/
-    background-color: rgb(173, 216, 230,0.95);
+    background-color: rgb(173, 216, 230, 0.95);
 }
 
 section h2 {
@@ -197,6 +196,7 @@ section h2 {
 
 h2 a {
     padding: 0;
+    color: #800e25;
 }
 
 ul,
@@ -303,15 +303,16 @@ ul,
 }
 
 .enlaces img {
-    width: 80%;
+    width: 70%;
     margin-top: .5em;
+    margin-left: 5%;
     /*Añadido CSS3 para borde y sombra en las imagenes y siguiente hover para dar efecto de transition.*/
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
     transition: box-shadow .5s;
 }
 
 .enlaces img:hover {
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 }
 
 .legisla {
@@ -324,7 +325,12 @@ ul,
 .legisla a {
     display: block;
     padding: 0.5em 0 0.2em 0.5em;
-    color: #666066;
+    color: #666666;
+}
+/*CSS3 sombra en texto para resaltalo con hover*/
+.legisla a:hover {
+    color: white;
+    text-shadow: 3px 3px 5px #000000;
 }
 
 .legisla h3,
@@ -344,7 +350,6 @@ ul,
 #seccionVisor {
     margin: 0.5em 1em;
     min-height: 8em;
-    background-color: #add8e6;
 }
 
 #botonesVisor {
@@ -362,16 +367,17 @@ ul,
     border: 1.5px solid #3939e0;
     text-align: center;
     cursor: pointer;
-    /*CSS3 añadido para dar boder radius y color gradiente en hover*/
+    /*CSS3 añadido para dar boder radius y transicion en hover*/
     border-radius: 12px;
-    background-color: #f0f0f0;
+    background: #f0f0f0;
 }
 
 #botonesVisor li:hover {
-
+    /*CSS3 añadido para dar color gradiente en hover*/
     background: linear-gradient(to left, #84d0f9 0%, #577bf4 100%);
     color: #800e25;
     font-weight: bold;
+    padding-right: 2em;
 }
 
 #map {
@@ -394,9 +400,11 @@ ul,
 .contacto {
     margin: 1.5em;
 }
-.contacto h2{
+
+.contacto h2 {
     margin-top: 1.5em
 }
+
 .contacto address,
 .contacto p,
 .contacto h2 {
