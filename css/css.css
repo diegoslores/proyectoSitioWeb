@@ -380,6 +380,20 @@ ul,
     font-weight: bold;
     width: 100%;
 }
+/*Codigo para quitar propiedades al primer botón y que parezca y un h2*/
+#botonesVisor li:first-child {
+    display: block;
+    padding: 0.5em;
+    margin: .5em auto;
+    width: 70%;
+    border: 0 solid;
+    text-align: center;
+    cursor: pointer;
+    background: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #800e25;
+}
 
 #map {
     float: left;
