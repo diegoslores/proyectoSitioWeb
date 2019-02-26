@@ -345,7 +345,7 @@ ul,
 
 /*CSS3 sombra en texto para resaltalo con hover*/
 .legisla a:hover {
-    color: white;
+    color: #800e25;
     text-shadow: 3px 3px 5px #000000;
 }
 
