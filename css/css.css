@@ -1,14 +1,13 @@
 /*CSS General a todo el sitio*/
 
 /*border-box con webkit y moz aplicado a todo o sitio web para ter un mellor control no tamaños das "caixas", creadas principalmente con float.*/
-/*Web font aplicada a todo el sitio con "*" */
+/*Web font aplicada a todo el sitio con "*" y prefijos -moz- y wbkit- para que box sizing siempre funcione en todos los navegadores*/
 @font-face {
     font-family: 'Roboto Condensed', sans-serif;
     src: url(../fonts/robotoCondensed.woff2);
 }
 
 * {
-
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     font-family: 'Roboto Condensed', sans-serif;
@@ -112,7 +111,7 @@ address a {
     border-radius: 50%;
     margin-bottom: 0.5em;
     /*CSS3 para dar sombra a los botones de RRSS*/
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.6);
     transition: box-shadow .5s;
 }
 
@@ -204,6 +203,16 @@ ul,
 .trabajos {
     line-height: 1.6em;
     text-align: justify;
+    list-style: none;
+    padding-left: 0;
+}
+
+/*CSS2 mejora de codigo css añadida*/
+.text li:before,
+.servicios li:before,
+.trabajos li:before {
+    content: '\27f4';
+    padding-right: .5em;
 }
 
 .textServ,
@@ -327,6 +336,13 @@ ul,
     padding: 0.5em 0 0.2em 0.5em;
     color: #666666;
 }
+
+/*CSS2 mejora de codigo css añadida*/
+.legisla a:before {
+    content: '\27fa';
+    padding-right: .2em;
+}
+
 /*CSS3 sombra en texto para resaltalo con hover*/
 .legisla a:hover {
     color: white;
@@ -380,6 +396,7 @@ ul,
     font-weight: bold;
     width: 100%;
 }
+
 /*Codigo para quitar propiedades al primer botón para que parezca un h2*/
 #botonesVisor li:first-child {
     border: 0 solid;
@@ -450,7 +467,7 @@ span label {
 }
 
 #formulario input,
-#formulario select{
+#formulario select {
     width: 80%;
     padding: 0.4em;
 }
