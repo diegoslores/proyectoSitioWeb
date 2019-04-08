@@ -84,7 +84,11 @@ h3 {
     border-bottom: none;
     font-weight: bold;
     /*CSS3 Transparencia*/
-    background: rgb(173, 216, 230, 0.95);
+    background: rgba(173, 216, 230, 0.95);
+    -webkit-background: rgba(173, 216, 230, 0.95);
+    -ms-background: rgba(173, 216, 230, 0.95);
+    -moz-background: rgba(173, 216, 230, 0.95);
+
 }
 
 #navegador a:hover {
@@ -136,7 +140,10 @@ footer p {
     margin: 0;
     border: solid 2px #00008b;
     /*CSS3 Transparencia*/
-    background-color: rgb(173, 216, 230, 0.95);
+    background: rgba(173, 216, 230, 0.95);
+    -webkit-background: rgba(173, 216, 230, 0.95);
+    -ms-background: rgba(173, 216, 230, 0.95);
+    -moz-background: rgba(173, 216, 230, 0.95);
 }
 
 footer span {
@@ -164,7 +171,10 @@ section {
     min-height: 8em;
     border: solid 2px #00008b;
     /*CSS3 Transparencia*/
-    background-color: rgb(173, 216, 230, 0.95);
+    background: rgba(173, 216, 230, 0.95);
+    -webkit-background: rgba(173, 216, 230, 0.95);
+    -ms-background: rgba(173, 216, 230, 0.95);
+    -moz-background: rgba(173, 216, 230, 0.95);
 }
 
 section h2 {
