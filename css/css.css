@@ -48,7 +48,6 @@ h3 {
 }
 
 #cabecera .imagen {
-    margin-top: 0.5em;
     margin-bottom: 2em;
     /*Añadido CSS3 sombra en las imagenes*/
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
@@ -110,8 +109,8 @@ address a {
 }
 
 #cabecera address img {
-    width: 40px;
-    height: 40px;
+    width: 2.083334%;/*40/1920*100 */
+    height: 2.083334%;
     border-radius: 50%;
     margin-bottom: 0.5em;
     /*CSS3 para dar sombra a los botones de RRSS*/
