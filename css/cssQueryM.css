@@ -1,4 +1,36 @@
 /*vp = 393 -- 731*/
 /*novp = 980*/
 
-@media screen and (max-width: 850px) {}
+@media screen and (max-width: 850px) and (min-width: 500px) {
+    body {
+        line-height: 1.2em;
+        width: 100%;
+    }
+
+    /*CSS de Cabecera*/
+    #cabecera .tituloLogo{
+        overflow: auto;
+    }
+    #cabecera .imagen {
+        width: 20%;
+        float:right;
+        padding-right:0.5em;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    }    
+
+    #navegador .BIni,
+    #navegador .BPres,
+    #navegador .BTrab,
+    #navegador .BServ,
+    #navegador .Binfo,
+    #navegador .BVis,
+    #navegador .BCont,
+    #navegador a {
+        border: 2px solid #3939e0;
+        border-radius: 6px;
+    
+    }
+
+
+}
+

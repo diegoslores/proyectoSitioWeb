@@ -1,30 +1,22 @@
 /*vp = 393 -- 731*/
 /*novp = 980*/
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
     body {
         line-height: 1.2em;
         width: 100%;
     }
 
     /*CSS de Cabecera*/
-
+    #cabecera .tituloLogo{
+        overflow: auto;
+    }
     #cabecera .imagen {
-        margin-left: 55%;
-        margin-bottom: 3em;
-        /*Añadido CSS3 sombra en las imagenes*/
+        width: 35%;
+        float:right;
+        padding-right:0.5em;
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-    }
-
-    #cabecera address {
-        position: absolute;
-        right: 1.5em;
-    }
-
-    #cabecera address img {
-        width: 40px;
-        /*40/1920*100 */
-    }
+    }    
 
     #navegador .BIni,
     #navegador .BPres,
@@ -36,7 +28,9 @@
     #navegador a {
         border: 2px solid #3939e0;
         border-radius: 6px;
+    
     }
 
 
 }
+
