@@ -8,16 +8,28 @@
     }
 
     /*CSS de Cabecera*/
-    #cabecera .tituloLogo{
+    #cabecera .tituloLogo {
         overflow: auto;
     }
+
     #cabecera .imagen {
-        float:right;
-        margin-right:0.5em;
+        float: right;
+        margin-right: 0.5em;
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     }
-    
-    #navegador{}
+
+    #navegador {
+        width: 8em;
+        margin-left: 0.5em;
+         position: relative;
+  top: 8em;
+    }
+
+    #navegador a {
+        /visibility: hidden;
+        border: 2px solid #3939e0;
+        border-radius: 6px;
+    }
 
     #navegador .BIni,
     #navegador .BPres,
@@ -25,15 +37,26 @@
     #navegador .BServ,
     #navegador .Binfo,
     #navegador .BVis,
-    #navegador .BCont,
-    #navegador a {
+    #navegador .BCont {
+        padding: 2.5em 2em;
+        visibility: visible;
         border: 2px solid #3939e0;
-        border-radius: 6px;    
+        border-radius: 6px;
     }
-    
-    #cuerpo img{
+
+    #cuerpo img {
         visibility: hidden;
+        position: absolute;
+    }
+
+    .textSeccion {
+        width: auto;
+        float: none;
+    }
+
+    address {
+        visibility: hidden;
+        position: absolute;
     }
 
 }
-

@@ -2,7 +2,7 @@
 /*novp = 980*/
 
 @media screen and (max-width: 850px) and (min-width: 500px) {
-    body {
+body {
         line-height: 1.2em;
         width: 100%;
     }
@@ -19,15 +19,15 @@
 
     #navegador {
         position: absolute;
-        bottom: 50%;
-        margin-left: 22%;
+        bottom: 40%;
+        margin-left: 25%;
         z-index: 5;
     }
 
     #navegador a {
         text-align: center;
         padding: 1em 0.5em;
-        width: 7em;
+        width: 6em;
         border: 2px solid #3939e0;
         border-radius: 6px;
         background: linear-gradient(#84d0e8, #f0f0f0);
@@ -39,9 +39,12 @@
     #navegador .BServ,
     #navegador .Binfo,
     #navegador .BVis,
-    #navegador .BCont,
-    #navegador a {
+    #navegador .BCont {
         border: 2px solid #3939e0;
     }
-
+    
+    address{
+      visibility: hidden;
+      position: absolute;
+    }
 }
