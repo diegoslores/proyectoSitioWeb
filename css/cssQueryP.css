@@ -8,25 +8,22 @@
     }
 
     /*CSS de Cabecera*/
-    #cabecera .tituloLogo {
-        overflow: auto;
-    }
 
     #cabecera .imagen {
         float: right;
         margin-right: 0.5em;
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+        margin-bottom: 0em;
     }
 
     #navegador {
         width: 8em;
         margin-left: 0.5em;
-         position: relative;
-  top: 8em;
+        position: relative;        
     }
 
     #navegador a {
-        /visibility: hidden;
+        visibility: hidden;
         border: 2px solid #3939e0;
         border-radius: 6px;
     }
