@@ -8,15 +8,30 @@
     }
 
     /*CSS de Cabecera*/
-    #cabecera .tituloLogo{
+    #cabecera .tituloLogo {
         overflow: auto;
     }
+
     #cabecera .imagen {
-        width: 20%;
-        float:right;
-        padding-right:0.5em;
+        float: left;
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-    }    
+    }
+
+    #navegador {
+        position: absolute;
+        bottom: 50%;
+        margin-left: 22%;
+        z-index: 5;
+    }
+
+    #navegador a {
+        text-align: center;
+        padding: 1em 0.5em;
+        width: 7em;
+        border: 2px solid #3939e0;
+        border-radius: 6px;
+        background: linear-gradient(#84d0e8, #f0f0f0);
+    }
 
     #navegador .BIni,
     #navegador .BPres,
@@ -27,10 +42,6 @@
     #navegador .BCont,
     #navegador a {
         border: 2px solid #3939e0;
-        border-radius: 6px;
-    
     }
 
-
 }
-
