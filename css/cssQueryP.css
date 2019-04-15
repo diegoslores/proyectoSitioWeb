@@ -8,18 +8,20 @@
     }
 
     /*CSS de Cabecera*/
+    #cabecera #logo{
+        overflow: hidden;
+    }
 
     #cabecera .imagen {
-        float: right;
-        margin-right: 0.5em;
+        float:right;
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
         margin-bottom: 0em;
     }
 
     #navegador {
         width: 8em;
-        margin-left: 0.5em;
-        position: relative;        
+        left: 0.5em;
+        top: 0.8em;
     }
 
     #navegador a {
@@ -28,17 +30,44 @@
         border-radius: 6px;
     }
 
+    #navegador .navega {
+        padding: 2.3em 2em;
+        visibility: visible;
+        border: 2px solid #3939e0;
+        border-radius: 6px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+        float: left;
+    }
+
     #navegador .BIni,
     #navegador .BPres,
     #navegador .BTrab,
     #navegador .BServ,
     #navegador .Binfo,
     #navegador .BVis,
-    #navegador .BCont {
-        padding: 2.5em 2em;
-        visibility: visible;
+    #navegador:first-child {
         border: 2px solid #3939e0;
         border-radius: 6px;
+        background: linear-gradient(#84d0e8, #f0f0f0);
+    }
+
+    #navegador:hover a {
+        visibility: visible;
+        z-index: 8;
+    }
+
+    /*CSS de address*/
+
+    #cabecera address {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    /*CSS de cuerpo*/
+
+    #cuerpo {
+        position: relative;
+        z-index: 1;
     }
 
     #cuerpo img {
@@ -51,9 +80,35 @@
         float: none;
     }
 
-    address {
-        visibility: hidden;
-        position: absolute;
+    /*CSS de footer*/
+    
+    footer div{
+        overflow: auto;
+        padding: 1.5em 3.7em;
+        text-align: center;
     }
+
+    footer address {
+        visibility: visible;
+        display: inline-block;
+        margin-top: 1em;
+        float: none;
+    }
+    footer .autor{
+        margin: 0.5em 1em;
+    }
+    footer .pie{
+        margin: 1em 0 0.5em;
+        float: none;
+    }
+    footer .pie a{
+        padding: 0.5em;
+        display:block;
+    }
+    
+    .pie a:nth-child(2){
+        border: none;
+    }
+    
 
 }

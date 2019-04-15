@@ -2,7 +2,7 @@
 /*novp = 980*/
 
 @media screen and (max-width: 850px) and (min-width: 500px) {
-body {
+    body {
         line-height: 1.2em;
         width: 100%;
     }
@@ -10,11 +10,6 @@ body {
     /*CSS de Cabecera*/
     #cabecera .tituloLogo {
         overflow: auto;
-    }
-
-    #cabecera .imagen {
-        float: left;
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     }
 
     #navegador {
@@ -42,9 +37,30 @@ body {
     #navegador .BCont {
         border: 2px solid #3939e0;
     }
+
+     /*CSS de address*/
     
-    address{
-      visibility: hidden;
-      position: absolute;
+    #cabecera address {
+        visibility: hidden;
+        position: absolute;
     }
+    
+    /*CSS de cuerpo*/
+    
+    /*CSS de footer*/    
+    footer address {
+        visibility: visible;
+        position:relative;
+        left:23%;
+        display: inline-block;
+    }
+    
+    footer .autor{
+        position: absolute;
+    }
+    
+    footer span{
+        padding-top: 2%;
+    }   
+    
 }

@@ -15,6 +15,7 @@
 
 body {
     line-height: 1.4em;
+    font-size: 1.1em;
     width: 90%;
     margin: auto;
     background-color: #f0f8ff;
@@ -51,6 +52,11 @@ h3 {
     margin-bottom: 1em;
     /*Añadido CSS3 sombra en las imagenes*/
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+#navegador .navega {
+    visibility: hidden;
+    float: right;
 }
 
 #navegador {
@@ -97,6 +103,11 @@ h3 {
     font-weight: bold;
 }
 
+/*
+    *address
+*/
+
+footer address,
 #cabecera address {
     padding-right: 0.5em;
     overflow: auto;
@@ -107,17 +118,24 @@ address a {
     float: right;
 }
 
+footer address img,
 #cabecera address img {
     width: 40px;
     border-radius: 50%;
     /*CSS3 para dar sombra a los botones de RRSS*/
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.6);
     transition: box-shadow .5s;
 }
 
+footer address img:hover,
 #cabecera address img:hover {
     /*CSS3 para reducir la sombra con hover*/
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+footer address{
+    visibility: hidden;
+    float: right;
 }
 
 /*
@@ -131,7 +149,7 @@ footer {
     padding: 1em;
 }
 
-footer p {
+footer div {
     padding: 1em;
     margin: 0;
     border: solid 2px #00008b;
@@ -142,12 +160,16 @@ footer p {
     -moz-background: rgba(173, 216, 230, 0.95);
 }
 
-footer span {
+footer .pie {
     float: right;
 }
 
-footer span a:hover {
-    font-weight: bold;
+.pie a:nth-child(2){
+    border-left: solid 1px;
+    border-right: solid 1px;
+}
+
+footer .pie a:hover {
     color: #800e25;
 }
 
