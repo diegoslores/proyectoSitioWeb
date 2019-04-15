@@ -8,15 +8,18 @@
     }
 
     /*CSS de Cabecera*/
-    #cabecera .tituloLogo {
+    #cabecera #logo{
         overflow: auto;
     }
-
+    #cabecera img{
+        float: left;
+        margin-bottom: 0;
+    }
     #navegador {
         position: absolute;
         bottom: 40%;
         margin-left: 25%;
-        z-index: 5;
+        font-size: 80%;
     }
 
     #navegador a {
@@ -46,21 +49,42 @@
     }
     
     /*CSS de cuerpo*/
-    
-    /*CSS de footer*/    
-    footer address {
-        visibility: visible;
-        position:relative;
-        left:23%;
-        display: inline-block;
+
+    #cuerpo .textSeccion {
+        width: 52%;
+        float: left;
+        font-size: 90%
     }
     
-    footer .autor{
+    #cuerpo .imgSeccion {
+        width: 40%;
+        float: right;
+    }
+    /*CSS de footer*/
+    footer div{
+        overflow: auto;
+	    font-size: 80%;
+    }
+    
+    footer address {
+        visibility: visible;
+        display: inline-block;
         position: absolute;
     }
     
-    footer span{
+    footer .autor{
+        visibility: hidden;
+        position: absolute;
+    }
+    
+    footer .pie{
         padding-top: 2%;
-    }   
+        padding-bottom: 2%;
+    } 
+    
+    .pie a:first-child{
+        visibility: visible;
+        border-right: solid 1px black;
+    }
     
 }

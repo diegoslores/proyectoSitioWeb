@@ -63,12 +63,7 @@
         position: absolute;
     }
 
-    /*CSS de cuerpo*/
-
-    #cuerpo {
-        position: relative;
-        z-index: 1;
-    }
+    /*CSS de cuerpo*/    
 
     #cuerpo img {
         visibility: hidden;
@@ -86,6 +81,7 @@
         overflow: auto;
         padding: 1.5em 3.7em;
         text-align: center;
+        font-size: 80%;
     }
 
     footer address {
@@ -106,7 +102,11 @@
         display:block;
     }
     
-    .pie a:nth-child(2){
+    .pie a:first-child{
+        position: absolute;
+    }
+    
+    .pie a:nth-child(3){
         border: none;
     }
     

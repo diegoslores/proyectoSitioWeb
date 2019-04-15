@@ -164,9 +164,13 @@ footer .pie {
     float: right;
 }
 
-.pie a:nth-child(2){
+.pie a:nth-child(3){
     border-left: solid 1px;
     border-right: solid 1px;
+}
+
+.pie a:first-child{
+    visibility: hidden;
 }
 
 footer .pie a:hover {
