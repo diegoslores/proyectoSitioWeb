@@ -8,27 +8,34 @@
     }
 
     /*CSS de Cabecera*/
-    #cabecera #logo{
+    #cabecera {
         overflow: auto;
     }
-    #cabecera img{
+
+    #cabecera .imagen {
         float: left;
         margin-bottom: 0;
+        width: 24%;
+        margin-left: 2%;
     }
+
     #navegador {
+        left: 30%;
+        bottom: 30%;
+        margin: 0;
+        width: 70%;
+    }
+
+    #navegador .navega {
         position: absolute;
-        bottom: 40%;
-        margin-left: 25%;
-        font-size: 80%;
     }
 
     #navegador a {
-        text-align: center;
-        padding: 1em 0.5em;
-        width: 6em;
-        border: 2px solid #3939e0;
+        padding: 1em 0.1em;
+        width: 18%;
         border-radius: 6px;
         background: linear-gradient(#84d0e8, #f0f0f0);
+        font-size: 60%;
     }
 
     #navegador .BIni,
@@ -41,13 +48,13 @@
         border: 2px solid #3939e0;
     }
 
-     /*CSS de address*/
-    
+    /*CSS de address*/
+
     #cabecera address {
         visibility: hidden;
         position: absolute;
     }
-    
+
     /*CSS de cuerpo*/
 
     #cuerpo .textSeccion {
@@ -55,36 +62,53 @@
         float: left;
         font-size: 90%
     }
-    
+
     #cuerpo .imgSeccion {
         width: 40%;
         float: right;
     }
+
     /*CSS de footer*/
-    footer div{
+
+    footer div {
         overflow: auto;
-	    font-size: 80%;
     }
-    
+
     footer address {
         visibility: visible;
         display: inline-block;
         position: absolute;
+        left: 10%
     }
-    
-    footer .autor{
+
+    footer address a {
+        margin-top: 8%;
+    }
+
+    footer .autor {
         visibility: hidden;
         position: absolute;
     }
-    
-    footer .pie{
-        padding-top: 2%;
-        padding-bottom: 2%;
-    } 
-    
-    .pie a:first-child{
-        visibility: visible;
-        border-right: solid 1px black;
+
+    footer .pie {
+        width: 80%;
     }
-    
+
+    footer .pie a {
+        font-size: 70%;
+        float: right;
+        width: 40%;
+        text-align: center;
+    }
+
+    .pie a:first-child {
+        visibility: visible;
+        border-left: solid 1px black;
+    }
+
+    .pie a:nth-child(3) {
+        border-left: solid 1px;
+        border-right: none;
+    }
+
 }
