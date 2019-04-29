@@ -1,7 +1,8 @@
 /*vp = 393 -- 731*/
 /*novp = 980*/
+/* As liñas do antigo codigo como float esta comentado */
 
-@media screen and (max-width: 1024px) and (min-width: 550px) {
+@media screen and (max-width: 850px) and (min-width: 500px) {
   body {
     line-height: 1.2em;
     width: 100%;
@@ -59,13 +60,13 @@
 
   #cuerpo .textSeccion {
     width: 52%;
-    float: left;
+    /*float: left;*/
     font-size: 90%;
   }
 
   #cuerpo .imgSeccion {
     width: 40%;
-    float: right;
+    /*float: right;*/
   }
 
   /*CSS de footer*/
