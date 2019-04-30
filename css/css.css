@@ -154,7 +154,7 @@ footer address img:hover,
 
 footer address {
     visibility: hidden;
-    float: right;
+    position: absolute;
 }
 
 /*
@@ -177,11 +177,13 @@ footer div {
     -webkit-background: rgba(173, 216, 230, 0.95);
     -ms-background: rgba(173, 216, 230, 0.95);
     -moz-background: rgba(173, 216, 230, 0.95);
+    
+    /*codigo flex*/
+    display: flex;
+    justify-content: space-between;
 }
 
-footer .pie {
-    float: right;
-}
+
 
 .pie a:nth-child(3) {
     border-left: solid 1px;
@@ -202,7 +204,6 @@ footer .pie a:hover {
 
 #cuerpo section:first-child {
     margin-top: 0;
-    z-index: 4;
     border-top: solid 2px #3030de;
 }
 
@@ -249,7 +250,7 @@ section h2 {
 
     /*codigo flex*/
     align-self: flex-start;
-    padding: 1% 0;
+    margin: 1% 0;
 }
 
 h2 a {
