@@ -2,7 +2,7 @@
 /*novp = 980*/
 /* As liñas do antigo codigo como float esta comentado */
 
-@media screen and (max-width: 850px) and (min-width: 500px) {
+@media screen and (max-width: 900px) and (min-width: 500px) {
   body {
     line-height: 1.2em;
     width: 100%;
