@@ -44,26 +44,42 @@ h3 {
 #cabecera {
     background: url("../img/cabecera.jpg") 50% 50%;
     background-color: #00008b;
-    position: relative;
-    padding: 1em;
+    /*position: relative;*/
+    padding-top: 1em;    
+    /*codigo flex*/
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#logo-nav{
+    /*codigo flex*/
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+#cabecera .img {
+    /*codigo flex*/
+    padding: 0 0 1.5em 1.5em;
+    display: flex;
 }
 
 #cabecera .imagen {
-    margin-bottom: 1em;
     /*Añadido CSS3 sombra en las imagenes*/
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);    
 }
 
 #navegador .navega {
     visibility: hidden;
-    float: right;
+    position: absolute;
 }
 
 #navegador {
-    position: absolute;
-    bottom: -0.3em;
-    margin-left: 0.5em;
-    z-index: 5;
+    /*position: absolute;bottom: -0.3em;margin-left: 0.5em;z-index: 5;*/
+    /*codigo flex*/
+    display: flex;
+    padding-left: 1.5em;
 }
 
 #navegador a {
@@ -105,16 +121,20 @@ h3 {
 /*
     *address
 */
+#cabecera address{
+    align-self: flex-end;
+    padding-bottom: 1em;
+}
 
 footer address,
 #cabecera address {
     padding-right: 0.5em;
-    overflow: auto;
+    /*overflow: auto;*/
 }
 
 address a {
     padding: 0em 0.2em 0.5em;
-    float: right;
+    /*float: right;*/
 }
 
 footer address img,
