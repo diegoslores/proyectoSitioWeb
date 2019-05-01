@@ -1,114 +1,130 @@
 /*vp = 393 -- 731*/
 /*novp = 980*/
-/* As liñas do antigo codigo como float esta comentado */
+/* As liñas do antigo codigo como float esta comentado e os posicionamentos absolutos
+que quedan son para que os elementos hidden non interfiran na colocación dos elementos.*/
 
-@media screen and (max-width: 900px) and (min-width: 500px) {
-  body {
-    line-height: 1.2em;
-    width: 100%;
-  }
+@media screen and (max-width: 900px) and (min-width: 501px) {
+    body {
+        line-height: 1.2em;
+        width: 100%;
+    }
 
-  /*CSS de Cabecera*/
-  #cabecera {
-    overflow: auto;
-  }
+    /*CSS de Cabecera*/
 
-  #cabecera .imagen {
-    float: left;
-    margin-bottom: 0;
-    width: 24%;
-    margin-left: 2%;
-  }
+    #logo-nav {
+        /*codigo flex*/
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 98%;
+    }
 
-  #navegador {
-    left: 30%;
-    bottom: 30%;
-    margin: 0;
-    width: 70%;
-  }
+    /*#cabecera .imagen {
+        float: left;
+        margin-bottom: 0;
+        width: 24%;
+        margin-left: 2%;
+    }*/
 
-  #navegador .navega {
-    position: absolute;
-  }
+    #navegador {
+        /*left: 30%;
+        bottom: 30%;
+        margin: 0;*/
+        width: 70%;
 
-  #navegador a {
-    padding: 1em 0.1em;
-    width: 18%;
-    border-radius: 6px;
-    background: linear-gradient(#84d0e8, #f0f0f0);
-    font-size: 60%;
-  }
+        /*codigo flex*/
+        display: flex;
+        align-items: center;
+    }
 
-  #navegador .BIni,
-  #navegador .BPres,
-  #navegador .BTrab,
-  #navegador .BServ,
-  #navegador .Binfo,
-  #navegador .BVis,
-  #navegador .BCont {
-    border: 2px solid #3939e0;
-  }
+    #navegador a {
+        padding: 1em 0.1em;
+        width: 20%;
+        border-radius: 6px;
+        background: linear-gradient(#84d0e8, #f0f0f0);
+        font-size: 60%;
+    }
 
-  /*CSS de address*/
+    #navegador .BIni,
+    #navegador .BPres,
+    #navegador .BTrab,
+    #navegador .BServ,
+    #navegador .Binfo,
+    #navegador .BVis,
+    #navegador .BCont {
+        border: 2px solid #3939e0;
+    }
 
-  #cabecera address {
-    visibility: hidden;
-    position: absolute;
-  }
+    /*CSS de address*/
 
-  /*CSS de cuerpo*/
+    #cabecera address {
+        visibility: hidden;
+        position: absolute;
+    }
 
-  #cuerpo .textSeccion {
-    width: 52%;
-    /*float: left;*/
-    font-size: 90%;
-  }
+    /*CSS de cuerpo*/
 
-  #cuerpo .imgSeccion {
-    width: 40%;
-    /*float: right;*/
-  }
+    section {
+        padding: 1.5% 0;
+    }
 
-  /*CSS de footer*/
+    #cuerpo .textSeccion {
+        width: 52%;
+        /*float: left;*/
+        font-size: 90%;
+    }
 
-  footer div {
-    overflow: auto;
-  }
+    #cuerpo .imgSeccion {
+        width: 40%;
+        /*float: right;*/
+    }
 
-  footer address {
-    visibility: visible;
-    display: inline-block;
-    position: absolute;
-    left: 10%;
-  }
+    /*CSS de footer*/
 
-  footer address a {
-    margin-top: 8%;
-  }
+    footer address {
+        visibility: visible;
+        /*display: inline-block;
+        position: absolute;
+        left: 10%;*/
+        width: 50%;
+        
+        /*codigo flex*/
+        display: flex;
+        justify-content: center;
+    }
 
-  footer .autor {
-    visibility: hidden;
-    position: absolute;
-  }
+    /*footer address a {
+        margin-top: 8%;
+    }*/
 
-  footer .pie {
-    width: 80%;
-  }
+    footer .autor {
+        visibility: hidden;
+        position: absolute;
+    }
 
-  footer .pie a {
-    font-size: 70%;
-    float: right;
-    width: 40%;
-    text-align: center;
-  }
+    footer .pie {
+        width: 50%;
+        /*codigo flex*/
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        align-items: center;
+    }
 
-  .pie a:first-child {
-    visibility: visible;
-    border-left: solid 1px black;
-  }
+    footer .pie a {
+        font-size: 70%;
+        /*float: right;*/
+        width: 50%;
+        text-align: center;
+    }
 
-  .pie a:nth-child(3) {
-    border-left: solid 1px;
-    border-right: none;
-  }
+    .pie a:first-child {
+        visibility: visible;
+        border-left: solid 1px black;
+    }
+
+    .pie a:nth-child(3) {
+        border-left: solid 1px;
+        border-right: none;
+    }
 }

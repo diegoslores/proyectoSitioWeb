@@ -3,20 +3,26 @@
 
 <head>
     <title>HST</title>
+    <meta name="viewport" content="initial-scale=1, width=device-width">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" type="text/css" href="css/css.css" />
+    <link rel="stylesheet" type="text/css" href="css/cssQueryM.css" />
+    <link rel="stylesheet" type="text/css" href="css/cssQueryP.css" />
 </head>
 
 <body>
     <header id="cabecera">
-        <a href="index.html"><img src="img/logo.jpg" alt="logotio HST" height="100" width="150" class="imagen" /></a>        
-        <nav id="navegador">
-            <a href="index.html">Inicio</a>
-            <a href="presentacion.html">Presentación</a>
-            <a class="BServ" href="servicios.html">Servicios</a>
-            <a href="trabajos.html">Trabajos</a>
-            <a href="informacion.html">Información</a>
-        </nav>
+        <div id="logo-nav">
+            <a href="index.html" class="img"><img src="img/logo.jpg" alt="logotio HST" height="100" width="150" class="imagen" /></a>
+            <nav id="navegador">
+                <a class="navega" href="#">|||</a>
+                <a href="index.html">Inicio</a>
+                <a href="presentacion.html">Presentación</a>
+                <a class="BServ" href="servicios.html">Servicios</a>
+                <a href="trabajos.html">Trabajos</a>
+                <a href="informacion.html">Información</a>
+            </nav>
+        </div>
         <address>
             <a href="https://www.linkedin.com" target="_blank"><img alt="linkedin" src="img/linkedin.jpg" /></a>
             <a href="https://www.blogger.com/" target="_blank"><img alt="blogger" src="img/blogger.jpg" /></a>
@@ -24,7 +30,7 @@
         </address>
     </header>
     <main id="cuerpo">
-        <section>
+        <section id="secServicios">
             <div class="textServ">
                 <h2>Servicios</h2>
                 <p class="text">
@@ -49,19 +55,26 @@
                         Peritaciones, realizamos cualquier tipo de peritación ya que poseemos amplia experiencia en este campo y formamos pare de la lista de peritos judiciales del Ilustre Colegio oficial de ingenieros Técnicos en topografía.
                     </li>
                 </ul>
-                <img class="imgServicios" src="img/servicio1.jpg" alt="imagen de un Trabajo de campo"/>
             </div>
+            <img class="imgServicios" src="img/servicio1.jpg" alt="imagen de un Trabajo de campo" />
         </section>
     </main>
-
     <footer>
-        <p>
-            @diegoSanchez
-            <span>
-                <a href="./temp/mapaNavegacion.html">Mapas Navegación</a>|<a href="./temp/prototipos.html">Prototipos</a>|
+        <div>
+            <span class="autor">@diegoslores</span>
+            <address>
+                <a href="https://www.linkedin.com" target="_blank"><img alt="linkedin" src="img/linkedin.jpg" /></a>
+                <a href="https://www.blogger.com/" target="_blank"><img alt="blogger" src="img/blogger.jpg" /></a>
+                <a href="https://es-es.facebook.com" target="_blank"><img alt="facebook" src="img/face.png" /></a>
+            </address>
+            <span class="pie">
+                <a href="https://www.linkedin.com" target="_blank">@diegoslores</a>
+                <a href="./temp/prototipos.html">Prototipos</a>
+                <a href="./temp/mapaNavegacion.html">Mapas Navegación</a>
                 <a href="contacto.html"> Contacto </a>
             </span>
-        </p>
+
+        </div>
     </footer>
 </body>
 

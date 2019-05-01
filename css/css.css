@@ -1,4 +1,6 @@
 /*CSS General a todo el sitio*/
+/* As liñas do antigo codigo como float esta comentado e os posicionamentos absolutos
+que quedan son para que os elementos hidden non interfiran na colocación dos elementos.*/
 
 /*border-box con webkit y moz aplicado a todo o sitio web para ter un mellor control no tamaños das "caixas", creadas principalmente con float.*/
 /*Web font aplicada a todo el sitio con "*" y prefijos -moz- y wbkit- para que box sizing siempre funcione en todos los navegadores*/
@@ -16,13 +18,17 @@
 body {
     line-height: 1.4em;
     font-size: 1.1em;
-    width: 90%;
+    width: 95%;
     margin: auto;
     background-color: #f0f8ff;
 }
 
 #cuerpo {
     background: url("../img/cabecera.jpg") 50% 50%;
+    /*codigo flex*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 a {
@@ -45,45 +51,41 @@ h3 {
     background: url("../img/cabecera.jpg") 50% 50%;
     background-color: #00008b;
     /*position: relative;*/
-    padding-top: 1em;    
+    padding-top: 1em;
     /*codigo flex*/
     display: flex;
-    justify-content: space-between;
-    
+    align-items: center;
+    justify-content: space-evenly;
+
 }
 
-#logo-nav{
+#logo-nav {
     /*codigo flex*/
     display: flex;
     flex-direction: column;
-    align-content: space-around;
+    width: 75%;
 }
 
 #cabecera .img {
     /*codigo flex*/
-    padding: 0 0 1.5em 1.5em;
-    display: flex;
+    padding: 0 0 1.2em 0.3em;
 }
 
 #cabecera .imagen {
     /*Añadido CSS3 sombra en las imagenes*/
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);    
-}
-
-#navegador .navega {
-    visibility: hidden;
-    position: absolute;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 #navegador {
-    /*position: absolute;bottom: -0.3em;margin-left: 0.5em;z-index: 5;*/
-    /*codigo flex*/
+    /*position: absolute;
+    bottom: -0.3em;
+    margin-left: 0.5em;*/
+    z-index: 5;
     display: flex;
-    padding-left: 1.5em;
 }
 
 #navegador a {
-    display: inline-block;
+    /*display: inline-block;*/
     text-align: center;
     padding: 0.5em;
     width: 8em;
@@ -92,6 +94,12 @@ h3 {
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
     background: linear-gradient(#84d0e8, #f0f0f0);
+}
+
+#navegador .navega {
+    visibility: hidden;
+    padding: 0em;
+    width: 0em;
 }
 
 #navegador .BIni,
@@ -121,19 +129,17 @@ h3 {
 /*
     *address
 */
-#cabecera address{
+#cabecera address {
+    /*codigo flex*/
     align-self: flex-end;
     padding-bottom: 1em;
-}
-
-footer address,
-#cabecera address {
-    padding-right: 0.5em;
-    /*overflow: auto;*/
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 address a {
-    padding: 0em 0.2em 0.5em;
+    padding: 0.2em 0.2em 0.5em;
     /*float: right;*/
 }
 
@@ -154,7 +160,6 @@ footer address img:hover,
 
 footer address {
     visibility: hidden;
-    position: absolute;
 }
 
 /*
@@ -164,26 +169,28 @@ footer address {
 footer {
     background: url("../img/pie.jpg") 50% 50%;
     background-color: #00008b;
-    margin-top: -0.5em;
-    padding: 1em;
+
+    /*codigo flex*/
+    display: flex;
+    justify-content: center;
+    padding: 0.5% 0;
 }
 
 footer div {
-    padding: 1em;
-    margin: 0;
+    padding: 1%;
     border: solid 2px #00008b;
     /*CSS3 Transparencia*/
     background: rgba(173, 216, 230, 0.95);
     -webkit-background: rgba(173, 216, 230, 0.95);
     -ms-background: rgba(173, 216, 230, 0.95);
     -moz-background: rgba(173, 216, 230, 0.95);
-    
+
     /*codigo flex*/
+    width: 98%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-
-
 
 .pie a:nth-child(3) {
     border-left: solid 1px;
@@ -208,9 +215,9 @@ footer .pie a:hover {
 }
 
 section {
-    /*overflow: auto;*/
+    /*overflow: auto;
     margin: 0.5em 1em;
-    min-height: 8em;
+    min-height: 8em;*/
     border: solid 2px #00008b;
     /*CSS3 Transparencia*/
     background: rgba(173, 216, 230, 0.95);
@@ -221,9 +228,20 @@ section {
     /*Codigo flex*/
     display: flex;
     justify-content: space-around;
-    align-items: stretch;
+    width: 98%;
+    margin: 0.5% 0;
+    padding: 1% 0;
 }
 
+#cuerpo #secTrabajos,
+#seccionInfo,
+#secVisor,
+#secServicios {
+    /*Codigo flex*/
+    flex-direction: column;
+}
+
+/*para quitar los margin por defecto*/
 section h2 {
     margin: 0 0 5px 0;
 }
@@ -237,7 +255,6 @@ section h2 {
 .textSeccion {
     width: 77%;
     /*float: left;*/
-    padding: 1% 0;
 }
 
 .imgSeccion {
@@ -250,7 +267,6 @@ section h2 {
 
     /*codigo flex*/
     align-self: flex-start;
-    margin: 1% 0;
 }
 
 h2 a {
@@ -260,11 +276,14 @@ h2 a {
 
 ul,
 .servicios,
-.trabajos {
+.trabajos,
+.textServ,
+.textTrab,
+.textInfo {
     line-height: 1.6em;
     text-align: justify;
     list-style: none;
-    padding-left: 0;
+    padding: 0 1%;
 }
 
 /*CSS2 mejora de codigo css añadida*/
@@ -275,80 +294,81 @@ ul,
     padding-right: 0.5em;
 }
 
-.textServ,
-.textTrab,
-.textInfo {
-    vertical-align: middle;
-    margin-top: 2%;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-bottom: 2%;
-    overflow: auto;
-    clear: left;
+.imgServicios {
+    width: 60%;
+    /*codigo flex*/
+    align-self: center;
 }
 
-.imgServicios,
+#trabImg {
+    /*codigo flex*/
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .imgTrabajo1 {
-    float: left;
-    width: 60%;
-    margin-left: 20%;
-    margin-bottom: 1em;
+    width: 100%;
     /*Añadido CSS3 para borde y sombra en las imagenes*/
     border-top: 1px solid #808080;
     border-left: 1px solid #808080;
     box-shadow: 5px 5px 5px rgba(139, 139, 139, 0.76);
-}
 
-.imgTrabajo1 {
-    float: left;
-    width: 20%;
-    margin-left: 4%;
+    /*codigo flex*/
+    align-self: center;
 }
 
 /*
     *CSS3 de Tooltip añadido para esta fase del proyecto
+    *En la parte de flex, absolute no se puede quitar sin perder el efecto.
 */
 .tooltip {
     position: relative;
+
+    /*codigo flex*/
+    width: 20%;
+    display: flex;
 }
 
 .tooltiptext {
     visibility: hidden;
-    width: 15%;
     background-color: #800e25;
     color: #fff;
     text-align: center;
     border-radius: 10px;
     padding: 5px 0;
+
+    /*codigo flex*/
+    position: absolute;
+    top: 2em;
+    z-index: 1;
+    left: 20%;
+    width: 60%;
 }
 
+/*
 .tooltiptext1 {
     position: absolute;
     top: 2em;
-    left: 6.5%;
     z-index: 1;
 }
 
 .tooltiptext2 {
     position: absolute;
     top: 2em;
-    left: 30.5%;
     z-index: 1;
 }
 
 .tooltiptext4 {
     position: absolute;
     top: 2em;
-    left: 54.5%;
     z-index: 1;
 }
 
 .tooltiptext3 {
     position: absolute;
     top: 2em;
-    left: 78.5%;
     z-index: 1;
-}
+}*/
 
 .tooltip:hover .tooltiptext {
     visibility: visible;

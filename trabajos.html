@@ -3,20 +3,26 @@
 
 <head>
     <title>HST</title>
+    <meta name="viewport" content="initial-scale=1, width=device-width">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" type="text/css" href="css/css.css" />
+    <link rel="stylesheet" type="text/css" href="css/cssQueryM.css" />
+    <link rel="stylesheet" type="text/css" href="css/cssQueryP.css" />
 </head>
 
 <body>
     <header id="cabecera">
-        <a href="index.html"><img src="img/logo.jpg" alt="logotio HST" height="100" width="150" class="imagen" /></a>
-        <nav id="navegador">
-            <a href="index.html">Inicio</a>
-            <a href="presentacion.html">Presentación</a>
-            <a href="servicios.html">Servicios</a>
-            <a class="BTrab" href="trabajos.html">Trabajos</a>
-            <a href="informacion.html">Información</a>
-        </nav>
+        <div id="logo-nav">
+            <a href="index.html" class="img"><img src="img/logo.jpg" alt="logotio HST" height="100" width="150" class="imagen" /></a>
+            <nav id="navegador">
+                <a class="navega" href="#">|||</a>
+                <a href="index.html">Inicio</a>
+                <a href="presentacion.html">Presentación</a>
+                <a href="servicios.html">Servicios</a>
+                <a class="BTrab" href="trabajos.html">Trabajos</a>
+                <a href="informacion.html">Información</a>
+            </nav>
+        </div>
         <address>
             <a href="https://www.linkedin.com" target="_blank"><img alt="linkedin" src="img/linkedin.jpg" /></a>
             <a href="https://www.blogger.com/" target="_blank"><img alt="blogger" src="img/blogger.jpg" /></a>
@@ -24,8 +30,8 @@
         </address>
     </header>
     <main id="cuerpo">
-        <section>
-            <div class="textTrab">
+        <section id="secTrabajos">
+            <article class="textTrab">
                 <h2>Trabajos</h2>
                 <ul class="trabajos">
                     <li>Obra Centro Terciario y Residencial la Pallaresa ( Centro comercial Santa Coloma de Gramanet).</li>
@@ -34,20 +40,22 @@
                     <li>Topográficos realizados para el Instituto Cartográfico (ICC) INCASOL (de superficie aproximada de 20 a 30 Ha), en Vic, Falset y Banyoles.</li>
                     <li>Ejecución de obras “Escola Bressol” de Polinyà.</li>
                 </ul>
-            </div>
-            <div class="tooltip">
-                <img class="imgTrabajo1" src="img/trabajo1.png" alt="Plano de trabajo 1" /><span class="tooltiptext tooltiptext1">Mercabarna</span>
-            </div>
-            <div class="tooltip">
-                <img class="imgTrabajo1" src="img/trabajo2.jpg" alt="Plano de trabajo 2" /><span class="tooltiptext tooltiptext2">Fira de Barcelona</span>
-            </div>
-            <div class="tooltip">
-                <img class="imgTrabajo1" src="img/trabajo6.png" alt="Plano de trabajo 4" /><span class="tooltiptext tooltiptext4">Obra Vilanoveta</span>
-            </div>
-            <div class="tooltip">
-                <img class="imgTrabajo1" src="img/trabajo5.jpg" alt="Plano de trabajo 3" /><span class="tooltiptext tooltiptext3">Barrio Can Calders</span>
-            </div>
-            <div class="textTrab">
+            </article>
+            <article id="trabImg">
+                <div class="tooltip">
+                    <img class="imgTrabajo1" src="img/trabajo1.png" alt="Plano de trabajo 1" /><span class="tooltiptext tooltiptext1">Mercabarna</span>
+                </div>
+                <div class="tooltip">
+                    <img class="imgTrabajo1" src="img/trabajo2.jpg" alt="Plano de trabajo 2" /><span class="tooltiptext tooltiptext2">Fira de Barcelona</span>
+                </div>
+                <div class="tooltip">
+                    <img class="imgTrabajo1" src="img/trabajo6.png" alt="Plano de trabajo 4" /><span class="tooltiptext tooltiptext4">Obra Vilanoveta</span>
+                </div>
+                <div class="tooltip">
+                    <img class="imgTrabajo1" src="img/trabajo5.jpg" alt="Plano de trabajo 3" /><span class="tooltiptext tooltiptext3">Barrio Can Calders</span>
+                </div>
+            </article>
+            <article class="textTrab">
                 <ul class="trabajos">
                     <li>Topográfico del barrio Can Calders en Sant Feliu de Llobregat.</li>
                     <li>Topográfico en Can Costa en Sant Vicenç dels Horts (27Ha).</li>
@@ -57,18 +65,25 @@
                     <li>Obra VILANOVETA- Urbanización del sector PP9-Sant Pere de Ribes (replanteos, cúbicos, ejecución de obra).</li>
                     <li>MERCABARNA- Plano topográfico, zona del antiguo mercado de la Flor (4Ha).</li>
                 </ul>
-            </div>
+            </article>
         </section>
     </main>
-
     <footer>
-        <p>
-            @diegoSanchez
-            <span>
-                <a href="./temp/mapaNavegacion.html">Mapas Navegación</a>|<a href="./temp/prototipos.html">Prototipos</a>|
+        <div>
+            <span class="autor">@diegoslores</span>
+            <address>
+                <a href="https://www.linkedin.com" target="_blank"><img alt="linkedin" src="img/linkedin.jpg" /></a>
+                <a href="https://www.blogger.com/" target="_blank"><img alt="blogger" src="img/blogger.jpg" /></a>
+                <a href="https://es-es.facebook.com" target="_blank"><img alt="facebook" src="img/face.png" /></a>
+            </address>
+            <span class="pie">
+                <a href="https://www.linkedin.com" target="_blank">@diegoslores</a>
+                <a href="./temp/prototipos.html">Prototipos</a>
+                <a href="./temp/mapaNavegacion.html">Mapas Navegación</a>
                 <a href="contacto.html"> Contacto </a>
             </span>
-        </p>
+
+        </div>
     </footer>
 </body>
 

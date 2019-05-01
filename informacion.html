@@ -3,19 +3,25 @@
 
 <head>
     <title>HST</title>
+    <meta name="viewport" content="initial-scale=1, width=device-width">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" type="text/css" href="css/css.css" />
+    <link rel="stylesheet" type="text/css" href="css/cssQueryM.css" />
+    <link rel="stylesheet" type="text/css" href="css/cssQueryP.css" />
 </head>
 
 <body>
     <header id="cabecera">
-        <a href="index.html"><img src="img/logo.jpg" alt="logotio HST" height="100" width="150" class="imagen" /></a>
-        <nav id="navegador">
-            <a href="index.html">Inicio</a>
-            <a class="Binfo" href="informacion.html">Información</a>
-            <a href="visor.html">Visor</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
+        <div id="logo-nav">
+            <a href="index.html" class="img"><img src="img/logo.jpg" alt="logotio HST" height="100" width="150" class="imagen" /></a>
+            <nav id="navegador">
+                <a class="navega" href="#">|||</a>
+                <a href="index.html">Inicio</a>
+                <a class="Binfo" href="informacion.html">Información</a>
+                <a href="visor.html">Visor</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
         <address>
             <a href="https://www.linkedin.com" target="_blank"><img alt="linkedin" src="img/linkedin.jpg" /></a>
             <a href="https://www.blogger.com/" target="_blank"><img alt="blogger" src="img/blogger.jpg" /></a>
@@ -26,7 +32,7 @@
         <section id="seccionInfo">
             <ul class="breadcrumbs">
                 <li><a href="index.html">Inicio ></a></li>
-                <li><a href="#">Información</a></li>                
+                <li><a href="#">Información</a></li>
             </ul>
             <article class="textInfo">
                 <h2>Información</h2>
@@ -65,13 +71,21 @@
         </section>
     </main>
     <footer>
-        <p>
-            @diegoSanchez
-            <span>
-                <a href="./temp/mapaNavegacion.html">Mapas Navegación</a>|<a href="./temp/prototipos.html">Prototipos</a>|
+        <div>
+            <span class="autor">@diegoslores</span>
+            <address>
+                <a href="https://www.linkedin.com" target="_blank"><img alt="linkedin" src="img/linkedin.jpg" /></a>
+                <a href="https://www.blogger.com/" target="_blank"><img alt="blogger" src="img/blogger.jpg" /></a>
+                <a href="https://es-es.facebook.com" target="_blank"><img alt="facebook" src="img/face.png" /></a>
+            </address>
+            <span class="pie">
+                <a href="https://www.linkedin.com" target="_blank">@diegoslores</a>
+                <a href="./temp/prototipos.html">Prototipos</a>
+                <a href="./temp/mapaNavegacion.html">Mapas Navegación</a>
                 <a href="contacto.html"> Contacto </a>
             </span>
-        </p>
+
+        </div>
     </footer>
 </body>
 
