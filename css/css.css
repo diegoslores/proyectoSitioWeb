@@ -614,3 +614,51 @@ h3 {
     width: 90%;
     padding: 0.5em;
 }
+
+/*GRID*/
+
+
+body {
+    display: grid;
+    grid-template-areas: "head"
+                         "main"
+                         "foot";
+}
+
+#cabecera {
+    grid-area: head;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+#cuerpo {
+    grid-area: main;
+    display: grid;
+    grid-row-gap: 10px;
+}
+
+section {
+    background-color: red;
+    padding: 1%;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+
+}
+
+section:nth-child(2n) {
+    background-color: yellow;
+    grid-template-columns: 1fr 4fr;
+}
+
+#foot {
+    grid-area: foot;
+    background-color: mediumvioletred;
+
+}
+
+#foot div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+}
+

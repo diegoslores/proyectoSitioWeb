@@ -35,18 +35,24 @@ body {
 
 section {
     background-color: red;
+    padding: 1%;
     display: grid;
     grid-template-columns: 4fr 1fr;
-    
+
 }
 
 section:nth-child(2n) {
     background-color: yellow;
-    display: grid;
     grid-template-columns: 1fr 4fr;
 }
 
 #foot {
     grid-area: foot;
-    background-color: aliceblue;
+    background-color: mediumvioletred;
+
+}
+
+#foot div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
 }
