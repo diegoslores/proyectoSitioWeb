@@ -382,18 +382,21 @@ ul,
 }
 
 .textInfoDown {
-    overflow: auto;
+    /*codigo flex*/
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .enlaces {
-    float: left;
-    width: 45%;
-    margin-left: 2em;
+    /*codigo flex*/
+    width: 48%; 
+    display: flex;
+    flex-direction: column;
+    border: solid;
 }
 
 .enlaces img {
     width: 70%;
-    margin-top: 0.5em;
     margin-left: 5%;
     /*Añadido CSS3 para borde y sombra en las imagenes y siguiente hover para dar efecto de transition.*/
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
@@ -405,14 +408,13 @@ ul,
 }
 
 .legisla {
-    float: left;
-    clear: right;
-    margin-left: 2.5em;
-    width: 45%;
+    /*codigo flex*/
+    width: 48%; 
+    display: flex;
+    flex-direction: column;
 }
 
 .legisla a {
-    display: block;
     padding: 0.5em 0 0.2em 0.5em;
     color: #666666;
 }
