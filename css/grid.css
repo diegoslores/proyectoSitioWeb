@@ -9,26 +9,44 @@
     font-family: "Roboto Condensed", sans-serif;
 }
 
-img{
-    width: 20%;
+img {
+    width: 50%;
 }
 
-body{
+body {
     display: grid;
-    grid-template-areas:    "head"
-                            "main"
-                            "foot";
+    grid-template-areas: "head"
+                         "main"
+                         "foot";
 }
 
-#cabecera{
+#cabecera {
     grid-area: head;
     background-color: aqua;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
 }
-#cuerpo{
+
+#cuerpo {
     grid-area: main;
-    background-color: red;
+    display: grid;
+    grid-row-gap: 10px;
 }
-#foot{
+
+section {
+    background-color: red;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    
+}
+
+section:nth-child(2n) {
+    background-color: yellow;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+#foot {
     grid-area: foot;
     background-color: aliceblue;
 }
