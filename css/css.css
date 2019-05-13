@@ -150,6 +150,7 @@ h3 {
 address a {
     padding: 0.2em 0.2em 0.5em;
     /*float: right;*/
+    border: solid;
 }
 
 footer address img,
