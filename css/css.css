@@ -18,17 +18,24 @@ que quedan son para que os elementos hidden non interfiran na colocación dos el
 body {
     line-height: 1.4em;
     font-size: 1.1em;
-    width: 95%;
+    width: 98%;
     margin: auto;
     background-color: #f0f8ff;
+    
+    /*codigo grid*/
+    display: grid;
+    grid-template-areas: "head"
+                         "main"
+                         "foot";
 }
 
 #cuerpo {
     background: url("../img/cabecera.jpg") 50% 50%;
-    /*codigo flex*/
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    /*codigo grid*/
+    grid-area: main;
+    display: grid;
+    grid-row-gap: 10px;
+    justify-items: center;
 }
 
 a {
@@ -52,18 +59,17 @@ h3 {
     background-color: #00008b;
     /*position: relative;*/
     padding-top: 1em;
-    /*codigo flex*/
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-
+    
+    /*codigo grid*/
+    grid-area: head;
+    display: grid;
+    grid-template-columns: 80% 18%;
 }
 
 #logo-nav {
     /*codigo flex*/
-    display: flex;
-    flex-direction: column;
-    width: 75%;
+    display: grid;
+    
 }
 
 #cabecera .img {
@@ -98,8 +104,8 @@ h3 {
 
 #navegador .navega {
     visibility: hidden;
-    padding: 0em;
-    width: 0em;
+    padding: 0;
+    width: 0;
 }
 
 #navegador .BIni,
@@ -210,7 +216,6 @@ footer .pie a:hover {
 */
 
 #cuerpo section:first-child {
-    margin-top: 0;
     border-top: solid 2px #3030de;
 }
 
@@ -225,52 +230,55 @@ section {
     -ms-background: rgba(173, 216, 230, 0.95);
     -moz-background: rgba(173, 216, 230, 0.95);
 
-    /*Codigo flex*/
-    display: flex;
-    justify-content: space-around;
+    /*Codigo grid*/
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-column-gap: 2%;
+    text-align: justify;
+    padding: 1%;
     width: 98%;
-    margin: 0.5% 0;
-    padding: 1% 0;
 }
 
-#cuerpo #secTrabajos,
+section:nth-child(2n) {
+    grid-template-columns: 1fr 4fr;
+}
+
+/*#cuerpo #secTrabajos,
 #seccionInfo,
 #secVisor,
 #secServicios {
-    /*Codigo flex*/
+    Codigo flex
     flex-direction: column;
-}
+}*/
 
 /*para quitar los margin por defecto*/
 section h2 {
-    margin: 0 0 5px 0;
-}
-
-.text {
     margin: 0;
-    text-align: justify;
-    margin-bottom: 0.5em;
 }
 
 .textSeccion {
-    width: 77%;
-    /*float: left;*/
+    /*codogo grid*/
+    display: grid;
+    grid-row-gap:5px;
+    align-content: start;
+    
+}
+.text{
+    margin: 0;    
 }
 
 .imgSeccion {
-    width: 15%;
+    width: 100%;
+    margin: 0 1% 0 0;
     /*float: left;*/
     /*Añadido CSS3 para borde y sombra en las imagenes*/
     border-top: 1px solid #808080;
     border-left: 1px solid #808080;
     box-shadow: 5px 5px 5px rgba(139, 139, 139, 0.7);
-
-    /*codigo flex*/
-    align-self: flex-start;
 }
 
 h2 a {
-    padding: 0;
+    padding: 0;/*quitar padding por defecto en el a */
     color: #800e25;
 }
 
@@ -614,51 +622,3 @@ h3 {
     width: 90%;
     padding: 0.5em;
 }
-
-/*GRID*/
-
-
-body {
-    display: grid;
-    grid-template-areas: "head"
-                         "main"
-                         "foot";
-}
-
-#cabecera {
-    grid-area: head;
-    background-color: aqua;
-    display: grid;
-    grid-template-columns: 4fr 1fr;
-}
-
-#cuerpo {
-    grid-area: main;
-    display: grid;
-    grid-row-gap: 10px;
-}
-
-section {
-    background-color: red;
-    padding: 1%;
-    display: grid;
-    grid-template-columns: 4fr 1fr;
-
-}
-
-section:nth-child(2n) {
-    background-color: yellow;
-    grid-template-columns: 1fr 4fr;
-}
-
-#foot {
-    grid-area: foot;
-    background-color: mediumvioletred;
-
-}
-
-#foot div {
-    display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
-}
-
