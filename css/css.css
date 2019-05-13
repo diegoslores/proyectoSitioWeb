@@ -235,7 +235,7 @@ section {
 
     /*Codigo grid*/
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 8fr 1fr;
     grid-column-gap: 2%;
     text-align: justify;
     padding: 1%;
@@ -243,10 +243,11 @@ section {
 }
 
 section:nth-child(2n) {
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 8fr;
 }
 
-/*#cuerpo #secTrabajos,
+/* codigo que afectaba as outras páxinas do sitio
+#cuerpo #secTrabajos,
 #seccionInfo,
 #secVisor,
 #secServicios {
@@ -254,7 +255,7 @@ section:nth-child(2n) {
     flex-direction: column;
 }*/
 
-/*para quitar los margin por defecto*/
+/*para quitar os margin por defecto*/
 section h2 {
     margin: 0;
 }
