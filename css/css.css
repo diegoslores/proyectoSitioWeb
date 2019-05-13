@@ -139,11 +139,12 @@ h3 {
     *address
 */
 #cabecera address {
-    /*codigo flex*/
-    
-    padding-bottom: 1em;
-    width: 20%;
-    
+    /*codigo grid*/
+    display: grid;
+    grid-template-columns: repeat(3, 25%);
+    grid-template-rows: 35%;
+    justify-content: end;
+    align-content: end;
 }
 
 address a {
