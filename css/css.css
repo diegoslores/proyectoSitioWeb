@@ -21,18 +21,11 @@ body {
     width: 98%;
     margin: auto;
     background-color: #f0f8ff;
-    
-    /*codigo grid*/
-    display: grid;
-    grid-template-areas: "head"
-                         "main"
-                         "foot";
 }
 
 #cuerpo {
     background: url("../img/cabecera.jpg") 50% 50%;
     /*codigo grid*/
-    grid-area: main;
     display: grid;
     grid-row-gap: 10px;
     justify-items: center;
@@ -59,21 +52,21 @@ h3 {
     background-color: #00008b;
     /*position: relative;*/
     padding: 1% 1% 0;
-    
+
     /*codigo grid*/
-    grid-area: head;
     display: grid;
     grid-template-columns: 6fr 1fr;
 }
 
 #logo-nav {
-    /*codigo flex*/
+    /*codigo grid*/
     display: grid;
-    
+    grid-row-gap: 1em;
 }
 
 #cabecera .img {
-    padding: 0 0 1.2em 0.3em;
+    padding: 0;
+    padding-left: 0.3em;
 }
 
 #cabecera .imagen {
@@ -86,10 +79,12 @@ h3 {
     bottom: -0.3em;
     margin-left: 0.5em;*/
     padding-left: 0.3em;
-    
+
     /*codigo grid*/
     display: grid;
-    grid-template-columns: repeat(6, 1fr);  
+    grid-template-areas: "ini pres serv trab info sel";
+    justify-items: stretch ; 
+        
 }
 
 #navegador a {
@@ -103,13 +98,37 @@ h3 {
     background: linear-gradient(#84d0e8, #f0f0f0);
 }
 
-#navegador .navega {
-    /*necesario para que no interfiera en el flujo grid*/
-    /*:before {
-    content: "\2261*/
+/*#navegador .navega {
     visibility: hidden;
     position: absolute;
+}*/
+
+    /*codigo grid*/
+#navegador a:first-child {
+    grid-area: sel;
+    visibility: hidden;
 }
+
+#navegador a:last-child {
+    grid-area: info;
+}
+
+#navegador a:nth-child(2) {
+    grid-area: ini;
+}
+
+#navegador a:nth-child(3) {
+    grid-area: pres;
+}
+
+#navegador a:nth-child(4) {
+    grid-area: serv;
+}
+
+#navegador a:nth-child(5) {
+    grid-area: trab;
+}
+    /**/
 
 #navegador .BIni,
 #navegador .BPres,
@@ -141,16 +160,15 @@ h3 {
 #cabecera address {
     /*codigo grid*/
     display: grid;
-    grid-template-columns: repeat(3, 25%);
-    grid-template-rows: 35%;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: end;
     align-content: end;
+    padding-right: 0.3em;
 }
 
 address a {
     padding: 0.2em 0.2em 0.5em;
     /*float: right;*/
-    border: solid;
 }
 
 footer address img,
@@ -180,13 +198,13 @@ footer {
     background: url("../img/pie.jpg") 50% 50%;
     background-color: #00008b;
 
-    /*codigo flex*/
+    /*codigo flex
     display: flex;
     justify-content: center;
-    padding: 0.5% 0;
+    padding: 0.5% 0;*/
 }
 
-footer div {
+footer #foot {
     padding: 1%;
     border: solid 2px #00008b;
     /*CSS3 Transparencia*/
@@ -264,12 +282,13 @@ section h2 {
 .textSeccion {
     /*codogo grid*/
     display: grid;
-    grid-row-gap:5px;
+    grid-row-gap: 5px;
     align-content: start;
-    
+
 }
-.text{
-    margin: 0;    
+
+.text {
+    margin: 0;
 }
 
 .imgSeccion {
@@ -283,7 +302,8 @@ section h2 {
 }
 
 h2 a {
-    padding: 0;/*quitar padding por defecto en el a */
+    padding: 0;
+    /*quitar padding por defecto en el a */
     color: #800e25;
 }
 
@@ -402,7 +422,7 @@ ul,
 
 .enlaces {
     /*codigo flex*/
-    width: 48%; 
+    width: 48%;
     display: flex;
     flex-direction: column;
     border: solid;
@@ -422,7 +442,7 @@ ul,
 
 .legisla {
     /*codigo flex*/
-    width: 48%; 
+    width: 48%;
     display: flex;
     flex-direction: column;
 }
