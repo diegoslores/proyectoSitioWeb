@@ -227,30 +227,26 @@ footer #foot {
 
     /*codigo grid*/
     display: grid;
-    grid-template-columns: repeat(2, 1fr) 4fr;
+    grid-template-columns: 1fr 2fr 4fr;
     align-items: center;
 }
 
 .pie {
     display: grid;
-    grid-template-columns: repeat(4, 10em);
+    grid-template-columns: 2em repeat(3, 1fr);
     justify-content: end;
     align-items: center;
 }
 
 .pie a:nth-child(3) {
     border-left: solid 1px;
-    border-right: solid 1px;
+    border-right: solid 1px;    
+}
+    
+.pie a:nth-child(n){
     text-align: center;
-}
-    /*codigo grid*/
-.pie a:nth-child(2){
-    justify-self: end;
-}
-.pie a:nth-child(4){
-    justify-self: start;
-}
-    /**/
+}    
+
 .pie a:first-child {
     visibility: hidden;
 }
@@ -348,7 +344,11 @@ ul,
     content: "\27f4";
     padding-right: 0.5em;
 }
-
+/**/
+/**/
+/*O CODIGO DESTE EXERCICIO REMATA AQUI*/
+/**/
+/**/
 .imgServicios {
     width: 60%;
     /*codigo flex*/
