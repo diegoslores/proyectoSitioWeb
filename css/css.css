@@ -158,7 +158,7 @@ h3 {
 /*
     *address
 */
-#cabecera address {
+ address {
     /*codigo grid*/
     display: grid;
     grid-template-columns: repeat(3, 1fr);

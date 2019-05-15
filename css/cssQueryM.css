@@ -86,18 +86,13 @@ que quedan son para que os elementos hidden non interfiran na colocación dos el
     section {
         /*padding: 1.5% 0;*/
         font-size: 90%;
-        
+
         /*Codigo grid*/
-        display: grid;
-        grid-template-columns: 8fr 1fr;
-        grid-column-gap: 2%;
-        text-align: justify;
-        padding: 1%;
-        width: 98%;
+        grid-template-columns: 2fr 1fr;
     }
 
     section:nth-child(2n) {
-        grid-template-columns: 1fr 8fr;
+        grid-template-columns: 1fr 2fr;
     }
 
     /*#cuerpo .textSeccion {
@@ -112,50 +107,74 @@ que quedan son para que os elementos hidden non interfiran na colocación dos el
 
     /*CSS de footer*/
 
+    footer #foot {
+        /*codigo grid*/
+        grid-template-columns: 10px 2fr 4fr;
+    }
+
     footer address {
         visibility: visible;
+
         /*display: inline-block;
         position: absolute;
-        left: 10%;*/
-        width: 50%;
-
-        /*codigo flex*/
+        left: 10%;
+        width: 50%;*/
+        /*codigo flex
         display: flex;
-        justify-content: center;
+        justify-content: center;*/
     }
 
     /*footer address a {
         margin-top: 8%;
     }*/
 
-    footer .autor {
-        visibility: hidden;
-        position: absolute;
-    }
-
-    footer .pie {
-        width: 50%;
-        /*codigo flex*/
+    .pie {
+        /*width: 50%;*/
+        /*codigo flex
         display: flex;
         flex-direction: row-reverse;
         flex-wrap: wrap;
-        align-items: center;
+        align-items: center;*/
+
+        /*codigo grid*/
+        grid-template-columns: auto;
+        grid-template-areas: "proto auth"
+                             "mapa cont";
+        justify-content: stretch;
     }
 
     footer .pie a {
         font-size: 70%;
-        /*float: right;*/
+        /*float: right;
         width: 50%;
-        text-align: center;
+        text-align: center;*/
     }
 
     .pie a:first-child {
         visibility: visible;
-        border-left: solid 1px black;
+        /*grid*/
+        grid-area: auth;
+    }
+
+    .pie a:nth-child(2) {
+        /*grid*/
+        grid-area: proto;
+        border-right: 1px solid;
     }
 
     .pie a:nth-child(3) {
-        border-left: solid 1px;
-        border-right: none;
+        /*grid*/
+        grid-area: mapa;
+        border-left: none;
+    }
+
+    .pie a:nth-child(4) {
+        /*grid*/
+        grid-area: cont;
+    }
+
+    footer .autor {
+        visibility: hidden;
+        font-size: 1px;
     }
 }
