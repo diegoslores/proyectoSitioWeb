@@ -323,16 +323,29 @@ ul,
 /*                                    */
 /**************************************/
 
+#secServicios,
+#secTrabajos {
+    /*codigo grid*/
+    grid-template-columns: 1fr;
+    justify-items: center;    
+}
+
 .imgServicios {
+    /*codigo flex
+    align-self: center;*/
     width: 60%;
-    /*codigo flex*/
-    align-self: center;
 }
 
 #trabImg {
-    /*codigo flex*/
+    /*codigo flex
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-evenly;*/
+    
+    /*codigo grid*/
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap: 1%;
+    width: 90%;
 }
 
 .imgTrabajo1 {
@@ -342,8 +355,6 @@ ul,
     border-left: 1px solid #808080;
     box-shadow: 5px 5px 5px rgba(139, 139, 139, 0.76);
 
-    /*codigo flex*/
-    align-self: center;
 }
 
 /*
@@ -351,11 +362,10 @@ ul,
     *En la parte de flex, absolute no se puede quitar sin perder el efecto.
 */
 .tooltip {
-    position: relative;
-
-    /*codigo flex*/
+    /*position: relative;
+    codigo flex
     width: 20%;
-    display: flex;
+    display: flex;*/
 }
 
 .tooltiptext {
