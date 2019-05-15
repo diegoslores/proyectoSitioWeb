@@ -284,22 +284,13 @@ section:nth-child(2n) {
     grid-template-columns: 1fr 8fr;
 }
 
-/* codigo que afectaba as outras páxinas do sitio
-#cuerpo #secTrabajos,
-#seccionInfo,
-#secVisor,
-#secServicios {
-    Codigo flex
-    flex-direction: column;
-}*/
-
 /*para quitar os margin por defecto*/
 section h2 {
     margin: 0;
 }
 
 .textSeccion {
-    /*codogo grid*/
+    /*codigo grid*/
     display: grid;
     grid-row-gap: 5px;
     align-content: start;
@@ -344,11 +335,13 @@ ul,
     content: "\27f4";
     padding-right: 0.5em;
 }
-/**/
-/**/
+
+/**************************************/
+/*                                    */
 /*O CODIGO DESTE EXERCICIO REMATA AQUI*/
-/**/
-/**/
+/*                                    */
+/**************************************/
+
 .imgServicios {
     width: 60%;
     /*codigo flex*/

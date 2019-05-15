@@ -11,12 +11,19 @@ que quedan son para que os elementos hidden non interfiran na colocación dos el
 
     /*CSS de Cabecera*/
 
+    #cabecera {
+        grid-template-columns: 1fr 20px;
+    }
+
     #logo-nav {
-        /*codigo flex*/
+        /*codigo flex
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        width: 98%;
+        width: 98%;*/
+
+        /*codigo grid*/
+        grid-template-columns: 1fr 2fr;
     }
 
     /*#cabecera .imagen {
@@ -29,17 +36,21 @@ que quedan son para que os elementos hidden non interfiran na colocación dos el
     #navegador {
         /*left: 30%;
         bottom: 30%;
-        margin: 0;*/
+        margin: 0;
         width: 70%;
-
-        /*codigo flex*/
+        codigo flex
         display: flex;
+        align-items: center;*/
+
+        /*codigo grid*/
+        grid-template-areas: "sel ini pres serv trab info";
         align-items: center;
+        padding: 0;
     }
 
     #navegador a {
         padding: 1em 0.1em;
-        width: 20%;
+        /*width: 20%;*/
         border-radius: 6px;
         background: linear-gradient(#84d0e8, #f0f0f0);
         font-size: 60%;
@@ -59,25 +70,45 @@ que quedan son para que os elementos hidden non interfiran na colocación dos el
 
     #cabecera address {
         visibility: hidden;
-        position: absolute;
+
+        /*codigo grid*/
+        grid-template-columns: auto;
+        padding: 0;
+    }
+
+    /*codigo complementario a grid*/
+    #cabecera address img {
+        width: 0;
+        padding: 0;
     }
 
     /*CSS de cuerpo*/
-
     section {
-        padding: 1.5% 0;
+        /*padding: 1.5% 0;*/
+        font-size: 90%;
+        
+        /*Codigo grid*/
+        display: grid;
+        grid-template-columns: 8fr 1fr;
+        grid-column-gap: 2%;
+        text-align: justify;
+        padding: 1%;
+        width: 98%;
     }
 
-    #cuerpo .textSeccion {
+    section:nth-child(2n) {
+        grid-template-columns: 1fr 8fr;
+    }
+
+    /*#cuerpo .textSeccion {
         width: 52%;
-        /*float: left;*/
+        float: left;
         font-size: 90%;
     }
-
     #cuerpo .imgSeccion {
         width: 40%;
-        /*float: right;*/
-    }
+        float: right;
+    }*/
 
     /*CSS de footer*/
 
@@ -87,7 +118,7 @@ que quedan son para que os elementos hidden non interfiran na colocación dos el
         position: absolute;
         left: 10%;*/
         width: 50%;
-        
+
         /*codigo flex*/
         display: flex;
         justify-content: center;
