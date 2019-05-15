@@ -7,6 +7,7 @@ que quedan son para que os elementos hidden non interfiran na colocación dos el
     body {
         line-height: 1.2em;
         width: 100%;
+        min-width: 340px;
     }
 
     /*CSS de Cabecera*/
