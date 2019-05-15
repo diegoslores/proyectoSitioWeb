@@ -82,7 +82,7 @@ h3 {
 
     /*codigo grid*/
     display: grid;
-    grid-template-areas: "ini pres serv trab info sel";
+    grid-template-columns: repeat(6,1fr);
     justify-items: stretch;
 
 }
@@ -104,29 +104,10 @@ h3 {
 }*/
 
 /*codigo grid*/
-#navegador a:first-child {
-    grid-area: sel;
+#navegador a:first-child {   
     visibility: hidden;
-}
-
-#navegador a:last-child {
-    grid-area: info;
-}
-
-#navegador a:nth-child(2) {
-    grid-area: ini;
-}
-
-#navegador a:nth-child(3) {
-    grid-area: pres;
-}
-
-#navegador a:nth-child(4) {
-    grid-area: serv;
-}
-
-#navegador a:nth-child(5) {
-    grid-area: trab;
+    grid-column-start:6;
+    grid-row-start: 1;
 }
 
 /**/
@@ -210,7 +191,7 @@ footer {
     justify-items: center;
 }
 
-footer #foot {
+ #foot {
     padding: 0.5em;
     border: solid 2px #00008b;
     /*CSS3 Transparencia*/

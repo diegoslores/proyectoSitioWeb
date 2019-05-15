@@ -1,6 +1,6 @@
 /*vp = 393 -- 731*/
 /*novp = 980*/
-/* As liñas do antigo codigo como float esta comentado e os posicionamentos absolutos
+/* As liñas do antigo codigo como float e flex esta comentado e os posicionamentos absolutos
 que quedan son para que os elementos hidden non interfiran na colocación dos elementos.*/
 
 @media screen and (max-width: 500px) {
@@ -13,32 +13,52 @@ que quedan son para que os elementos hidden non interfiran na colocación dos el
     /*#cabecera #logo {
         overflow: hidden;
     }*/
-    
+    #cabecera {
+        /*codigo-flex*/
+        grid-template-columns: 1fr 3%;
+    }
+
     #logo-nav {
-        /*codigo flex*/
+        /*codigo flex
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
         width: 98%;
-        padding-right: 0.5em;
-    }
-    #cabecera .img{
-        padding: 0 0 0.5em 0;
+        padding-right: 0.5em;*/
+
+        /*codigo grid*/
+        grid-template-columns: 1fr 1fr;
     }
     
-    #cabecera .imagen {
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    #logo-nav .img{
+        /*codigo grid*/
+        grid-column-start: 2;
+        justify-self: end;
+        padding: 1em 0;
     }
 
     #navegador {
         width: 8em;
         left: 0.5em;
-        top: 0.8em;
-        /*codigo flex*/
+        top: 1.2em;
+        /*codigo flex
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: wrap;*/
         /*necesario absolute para hacer este menu desplegable*/
         position: absolute;
+
+        /*codigo grid*/        
+        grid-template-columns: 1fr;
+        grid-column-start: 1;
+        justify-items: stretch;
+        grid-row-start: 1;
+    }
+
+    #navegador a:first-child {
+        visibility: visible;
+        
+        /*codigo grid*/  
+        grid-column-start: 1;
     }
 
     #navegador a:not(.navega) {
@@ -50,7 +70,6 @@ que quedan son para que os elementos hidden non interfiran na colocación dos el
     #navegador .navega {
         width: 8em;
         padding: 2.3em 2em;
-        visibility: visible;
         border: 2px solid #3939e0;
         border-radius: 6px;
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
@@ -71,67 +90,93 @@ que quedan son para que os elementos hidden non interfiran na colocación dos el
 
     #navegador:hover a {
         visibility: visible;
-        
+
     }
 
     /*CSS de address*/
 
     #cabecera address {
         visibility: hidden;
-        position: absolute;
     }
 
     /*CSS de cuerpo*/
 
-    #cuerpo img {
-        visibility: hidden;
-        width: 0.1%
+    section {
+        /*Codigo grid*/
+        grid-template-columns: 1fr 0;
+        grid-column-gap: 0%;
+        padding: 2%;
     }
 
-    .textSeccion {
-        width: auto;
-        /*float: none;*/
+    section:nth-child(2n) {
+        grid-template-columns: 0 1fr;
+    }
 
-        /*Codigo de flex*/
+    #cuerpo img {
+        visibility: hidden;
+        width: 0%
+    }
+
+    /*.textSeccion {
+        width: auto;
+        float: none;
+
+        Codigo de flex
         padding: 2%;
     }
 
     #cuerpo section:last-child {
-        /*Codigo de flex*/
+        Codigo de flex
         display: flex;
         flex-direction: column;
     }
 
     #cuerpo section:last-child .textSeccion {
-        /*Codigo de flex*/
+        Codigo de flex
         padding-top: 0;
-    }
+    }*/
 
     /*CSS de footer*/
 
-    footer div {
-        /*overflow: auto;*/
-        padding: 1.5em 3.7em;
-        text-align: center;
-        font-size: 80%;
-        /*codigo flex*/
+    #foot {
+        /*overflow: auto;
+        padding: 1.5em 3.7em;        
+        codigo flex
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        */
+
+        text-align: center;
+        font-size: 80%;
+
+        /*codigo grid*/
+        grid-template-columns: 1fr;
+        grid-template-rows: 0 1fr 3fr;
+        align-items: stretch;
     }
 
     footer address {
         visibility: visible;
+        /*codigo grid*/
+        justify-self: center;
     }
 
     footer .autor {
         visibility: hidden;
-        position: absolute;
     }
 
-    footer .pie {
-        display: flex;
-        flex-direction: column;
+    .pie {
+        /*display: flex;
+        flex-direction: column;*/
+        
+        /*codigo grid*/
+        grid-template-columns: 1fr;        
+        grid-template-rows: repeat(4,1fr);
+    }
+    
+     a {
+        padding: 0;
     }
 
     .pie a:first-child {
