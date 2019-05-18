@@ -432,22 +432,32 @@ ul,
 /*
     *CSS de información
 */
-#seccionInfo h2 {
-    margin-top: 0.5em;
+#seccionInfo{
+    /*codigo grid*/
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 5% 1fr 3fr;
 }
 
+/*#seccionInfo h2 {
+    margin-top: 0.5em;
+}*/
+
 .textInfoDown {
-    /*codigo flex*/
+    /*codigo flex
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-evenly;*/
+    
+    /*codigo grid*/
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
 }
 
 .enlaces {
-    /*codigo flex*/
+    /*codigo flex
     width: 48%;
     display: flex;
-    flex-direction: column;
-    border: solid;
+    flex-direction: column;*/
 }
 
 .enlaces img {
@@ -463,14 +473,17 @@ ul,
 }
 
 .legisla {
-    /*codigo flex*/
+    /*codigo flex
     width: 48%;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;*/
+    
+    /*codigo grid*/
+    display: grid;    
 }
 
 .legisla a {
-    padding: 0.5em 0 0.2em 0.5em;
+    /*padding: 0.5em 0 0.2em 0.5em;*/
     color: #666666;
 }
 
@@ -495,6 +508,13 @@ ul,
 /*
     *CSS específico de Visor
 */
+#secVisor{    
+    /*codigo grid*/
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 5% 1fr;
+}
+
 #seccionVisor h2 {
     text-align: center;
     margin: 1em;
@@ -502,14 +522,18 @@ ul,
 
 #seccionVisor {
     margin: 0.5em 1em;
-    min-height: 8em;
+    min-height: 8em;    
+    
+    /*codigo grid*/
+    display: grid;
+    grid-template-columns: 25% 1fr;
 }
 
 #botonesVisor {
-    float: left;
+    /*float: left;
     width: 20%;
     padding: 2%;
-    clear: both;
+    clear: both;*/
 }
 
 #botonesVisor li {
