@@ -82,7 +82,7 @@ h3 {
 
     /*codigo grid*/
     display: grid;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(6, 1fr);
     justify-items: stretch;
 
 }
@@ -104,9 +104,9 @@ h3 {
 }*/
 
 /*codigo grid*/
-#navegador a:first-child {   
+#navegador a:first-child {
     visibility: hidden;
-    grid-column-start:6;
+    grid-column-start: 6;
     grid-row-start: 1;
 }
 
@@ -139,7 +139,7 @@ h3 {
 /*
     *address
 */
- address {
+address {
     /*codigo grid*/
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -191,7 +191,7 @@ footer {
     justify-items: center;
 }
 
- #foot {
+#foot {
     padding: 0.5em;
     border: solid 2px #00008b;
     /*CSS3 Transparencia*/
@@ -221,12 +221,12 @@ footer {
 
 .pie a:nth-child(3) {
     border-left: solid 1px;
-    border-right: solid 1px;    
+    border-right: solid 1px;
 }
-    
-.pie a:nth-child(n){
+
+.pie a:nth-child(n) {
     text-align: center;
-}    
+}
 
 .pie a:first-child {
     visibility: hidden;
@@ -323,7 +323,7 @@ ul,
 /*                                    */
 /**************************************/
 
-#secPresentacion{
+#secPresentacion {
     height: 70vh;
     display: grid;
     grid-template-columns: 1fr 20%;
@@ -346,10 +346,10 @@ ul,
     /*codigo flex
     display: flex;
     justify-content: space-evenly;*/
-    
+
     /*codigo grid*/
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 1%;
     width: 90%;
     justify-self: center;
@@ -364,12 +364,12 @@ ul,
     codigo flex
     width: 20%;
     display: flex;*/
-    
+
     /*codigo grid*/
     display: grid;
     grid-template-rows: 3fr 1fr;
     justify-items: center;
-    
+
 }
 
 .tooltiptext {
@@ -380,7 +380,7 @@ ul,
     border-radius: 10px;
     padding: 5px 0;
     width: 60%;
-    
+
     /*codigo flex
     position: absolute;
     top: 2em;
@@ -416,6 +416,7 @@ ul,
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }
+
 /**/
 
 .imgTrabajo1 {
@@ -424,7 +425,7 @@ ul,
     border-top: 1px solid #808080;
     border-left: 1px solid #808080;
     box-shadow: 5px 5px 5px rgba(139, 139, 139, 0.76);
-    
+
     /*codigo grid*/
     align-self: stretch;
 }
@@ -432,7 +433,7 @@ ul,
 /*
     *CSS de información
 */
-#seccionInfo{
+#seccionInfo {
     /*codigo grid*/
     display: grid;
     grid-template-columns: auto;
@@ -447,10 +448,10 @@ ul,
     /*codigo flex
     display: flex;
     justify-content: space-evenly;*/
-    
+
     /*codigo grid*/
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .enlaces {
@@ -477,9 +478,9 @@ ul,
     width: 48%;
     display: flex;
     flex-direction: column;*/
-    
+
     /*codigo grid*/
-    display: grid;    
+    display: grid;
 }
 
 .legisla a {
@@ -508,7 +509,7 @@ ul,
 /*
     *CSS específico de Visor
 */
-#secVisor{    
+#secVisor {
     /*codigo grid*/
     display: grid;
     grid-template-columns: auto;
@@ -522,8 +523,8 @@ ul,
 
 #seccionVisor {
     margin: 0.5em 1em;
-    min-height: 8em;    
-    
+    min-height: 8em;
+
     /*codigo grid*/
     display: grid;
     grid-template-columns: 25% 1fr;
@@ -568,8 +569,8 @@ ul,
 }
 
 #map {
-    float: left;
-    width: 76%;
+    /*float: left;
+    width: 76%;*/
     margin: 2%;
     padding: 20% 0;
     background: url("../img/logo.jpg") no-repeat center;
@@ -583,13 +584,25 @@ ul,
 /*
     *CSS de Contacto
 */
-
-.contacto {
-    margin: 1.5em;
+#secContacto {
+    /*codigo grid*/
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 5% 1fr;
 }
 
-.contacto h2 {
+.contacto {
+    /*codigo grid*/
+    display: grid;
+    grid-template-rows: 3% 1fr;
+}
+
+/*.contacto h2 {
     margin-top: 1.5em;
+}*/
+.contacto address {
+    /*codigo grid*/
+    grid-template-columns: 1fr;
 }
 
 .contacto address,
@@ -605,38 +618,53 @@ ul,
 }
 
 #formulario {
-    padding: 1em;
-    width: 50%;
+    /*padding: 1em;
     margin: auto;
+    width: 60%;*/
+    
+    /*codigo grid*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 10px;
+    justify-items: center;
 }
 
 .col1,
 .col2 {
-    overflow: auto;
+    /*overflow: auto;
     width: 50%;
-    float: left;
+    float: left;*/
+
+    /*codigo grid*/
+    display: grid;
+    text-align: left;
+
 }
 
-#formulario span {
+/*#formulario span {
     overflow: auto;
-}
+}*/
 
-span label {
+/*span label {
     float: left;
     width: 98%;
     margin-top: 0.2em;
-}
+}*/
 
 #formulario input,
 #formulario select {
-    width: 80%;
+    width: 100%;
     padding: 0.4em;
+}
+
+#formulario .check{
+    display: grid;
+    grid-template-columns: 1fr 1fr
 }
 
 #formulario .check input {
     width: 10%;
     margin: 0 1em;
-    float: right;
 }
 
 #formulario .check {
@@ -653,11 +681,11 @@ span label {
 }
 
 #formulario .envio {
-    width: 20%;
     cursor: pointer;
     /*CSS3 añadido para dar boder radius y color gradiente en hover*/
     border-radius: 12px;
     background-color: #f0f0f0;
+    margin: 2%;
 }
 
 /*
@@ -679,7 +707,12 @@ section .breadcrumbs {
 /*
     *Mapas de Navegacion
 */
-
+#temp{
+    /*codigo grid*/
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 5% 1fr;
+}
 h3 {
     margin-bottom: 0;
     padding-left: 1em;
