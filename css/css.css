@@ -26,7 +26,7 @@ body {
 #cuerpo {
     background: url("../img/cabecera.jpg") 50% 50%;
     /*codigo grid*/
-    display: grid;
+    dis;
     grid-row-gap: 10px;
     justify-items: center;
 }
@@ -35,6 +35,11 @@ a {
     text-decoration: none;
     padding: 0.5em 1em;
     color: #000000;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #800e25;
 }
 
 h1,
@@ -54,13 +59,13 @@ h3 {
     padding: 1% 1% 0;
 
     /*codigo grid*/
-    display: grid;
+    dis;
     grid-template-columns: 6fr 1fr;
 }
 
 #logo-nav {
     /*codigo grid*/
-    display: grid;
+    dis;
     grid-row-gap: 1em;
 }
 
@@ -81,7 +86,7 @@ h3 {
     padding-left: 0.3em;
 
     /*codigo grid*/
-    display: grid;
+    dis;
     grid-template-columns: repeat(6, 1fr);
     justify-items: stretch;
 
@@ -141,17 +146,15 @@ h3 {
 */
 address {
     /*codigo grid*/
-    display: grid;
+    dislay: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: end;
     align-content: end;
     padding-right: 0.3em;
+    margin-bottom: 0;
 }
 
-address a {
-    padding: 0.2em 0.2em 0.5em;
-    /*float: right;*/
-}
+
 
 footer address img,
 #cabecera address img {
@@ -187,7 +190,7 @@ footer {
     padding: 0.5% 0;*/
 
     /*codigo grid*/
-    display: grid;
+    dis;
     justify-items: center;
 }
 
@@ -207,13 +210,13 @@ footer {
     align-items: center;*/
 
     /*codigo grid*/
-    display: grid;
+    dis;
     grid-template-columns: 1fr 2fr 4fr;
     align-items: center;
 }
 
 .pie {
-    display: grid;
+    dis;
     grid-template-columns: 2em repeat(3, 1fr);
     justify-content: end;
     align-items: center;
@@ -253,7 +256,7 @@ section {
     -moz-background: rgba(173, 216, 230, 0.95);
 
     /*Codigo grid*/
-    display: grid;
+    dis;
     grid-template-columns: 8fr 1fr;
     grid-column-gap: 2%;
     text-align: justify;
@@ -272,7 +275,7 @@ section h2 {
 
 .textSeccion {
     /*codigo grid*/
-    display: grid;
+    dis;
     grid-row-gap: 5px;
     align-content: start;
 }
@@ -325,7 +328,7 @@ ul,
 
 #secPresentacion {
     height: 70vh;
-    display: grid;
+    dis;
     grid-template-columns: 1fr 20%;
 }
 
@@ -348,7 +351,7 @@ ul,
     justify-content: space-evenly;*/
 
     /*codigo grid*/
-    display: grid;
+    dis;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 1%;
     width: 90%;
@@ -366,7 +369,7 @@ ul,
     display: flex;*/
 
     /*codigo grid*/
-    display: grid;
+    dis;
     grid-template-rows: 3fr 1fr;
     justify-items: center;
 
@@ -435,7 +438,7 @@ ul,
 */
 #seccionInfo {
     /*codigo grid*/
-    display: grid;
+    dis;
     grid-template-columns: auto;
     grid-template-rows: 5% 1fr 3fr;
 }
@@ -450,7 +453,7 @@ ul,
     justify-content: space-evenly;*/
 
     /*codigo grid*/
-    display: grid;
+    dis;
     grid-template-columns: repeat(2, 1fr);
 }
 
@@ -480,7 +483,7 @@ ul,
     flex-direction: column;*/
 
     /*codigo grid*/
-    display: grid;
+    dis;
 }
 
 .legisla a {
@@ -511,7 +514,7 @@ ul,
 */
 #secVisor {
     /*codigo grid*/
-    display: grid;
+    dis;
     grid-template-columns: auto;
     grid-template-rows: 5% 1fr;
 }
@@ -526,7 +529,7 @@ ul,
     min-height: 8em;
 
     /*codigo grid*/
-    display: grid;
+    dis;
     grid-template-columns: 25% 1fr;
 }
 
@@ -586,14 +589,14 @@ ul,
 */
 #secContacto {
     /*codigo grid*/
-    display: grid;
+    dis;
     grid-template-columns: auto;
     grid-template-rows: 5% 1fr;
 }
 
 .contacto {
     /*codigo grid*/
-    display: grid;
+    dis;
     grid-template-rows: 3% 1fr;
 }
 
@@ -623,7 +626,7 @@ ul,
     width: 60%;*/
     
     /*codigo grid*/
-    display: grid;
+    dis;
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 10px;
     justify-items: center;
@@ -636,7 +639,7 @@ ul,
     float: left;*/
 
     /*codigo grid*/
-    display: grid;
+    dis;
     text-align: left;
 
 }
@@ -658,7 +661,7 @@ ul,
 }
 
 #formulario .check{
-    display: grid;
+    dis;
     grid-template-columns: 1fr 1fr
 }
 
@@ -709,7 +712,7 @@ section .breadcrumbs {
 */
 #temp{
     /*codigo grid*/
-    display: grid;
+    dis;
     grid-template-columns: auto;
     grid-template-rows: 5% 1fr;
 }
